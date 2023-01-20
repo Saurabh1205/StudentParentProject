@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/verificationLyt"
+    tools:context="com.wordpro.studentproject.activities.VerficationActivity">
+
+   <!-- <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Enter 4 digit Security PIN"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edtSecurePin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edtbox"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:hint="@string/action_security_pin"
+        android:maxLength="4"
+        android:inputType="numberPassword"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btnPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/txtForgotPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center|right"
+        android:text="Forget / Change PIN"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textSize="@dimen/textSizesmall"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:text="Application will expire within 30 days after installation. This is a trial Version of Application."
+        android:textColor="@color/colorPrimaryDark" />
+
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textSize="@dimen/textSizesmall"
+        android:textStyle="bold"
+        android:text="@string/msg"
+        android:textColor="@color/colorPrimary" />
+
+
+    <ProgressBar
+        android:id="@+id/verify_progress"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:indeterminateTint="@color/colorPrimary"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="gone" />
+-->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="25dp"
+            android:layout_marginBottom="40dp">
+
+            <ImageView
+                android:id="@+id/verAppLogo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/txt_app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily=""
+                android:textColor="#3d3d3d"
+                android:text="Student Academic \n Schedule Handling Application" />
+
+
+            <TextView
+                android:id="@+id/txt_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="35sp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#3d3d3d"
+                android:text="Login" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_otp_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:text="You Can Login With Your Pin"/>
+
+            </LinearLayout>
+
+
+            <!-- Email Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:visibility="visible"
+                android:id="@+id/textOTP_layout_view"
+                android:layout_marginBottom="3dp">
+                <EditText
+                    android:id="@+id/edtSecurePin"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingLeft="35dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="7dp"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:maxLength="4"
+                    android:imeOptions="actionDone"
+                    android:background="@drawable/btn_round_shap_login"
+                    android:hint="Enter Security Pin"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Password Label -->
+
+            <TextView
+                android:id="@+id/txtForgotPin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="25dp"
+                android:gravity="left|center"
+                android:textColor="#F1C40F"
+                android:text="Forgot Pin | Change Pin"
+                android:layout_marginLeft="25dp"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/btn_edit_login_details"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:textSize="18sp"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center|left"
+                android:drawableLeft="@drawable/icon_new_back"
+                android:textColor="#F1C40F"
+                android:textStyle="normal"
+                android:layout_marginLeft="18dp"
+                android:visibility="invisible"
+                android:text="Back To Edit Login Details"/>
+            <!-- <android.support.v7.widget.AppCompatButton
+                 android:id="@+id/email_sign_in_button"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="24dp"
+                 android:padding="10dp"
+                 android:textColor="#ffffff"
+                 android:textSize="20sp"
+                 android:textStyle="bold"
+                 android:background="@drawable/btn_round_shap_login_btn"
+                 android:text="Next"/>-->
+
+
+            <Button
+                android:id="@+id/btnPin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@drawable/btn_round_shap_login_btn"
+                android:text="@string/btn_sub"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/verify_progress"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:indeterminateTint="@color/colorPrimary"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="gone" />
+</LinearLayout>

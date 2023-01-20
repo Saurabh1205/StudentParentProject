@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardPreventCornerOverlap="false"
+            app:contentPadding="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="22.3dp"
+                    android:layout_marginTop="26.3dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_header_Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11.7sp"
+                        android:textColor="#448ccb"
+                        android:text="Album Title"/>
+
+                    <TextView
+                        android:id="@+id/txt_header_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8.3sp"
+                        android:layout_marginTop="9.7dp"
+                        android:textColor="#919191"
+                        android:text="02 -02 -2020  |  12:23 AM"/>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#5c656565"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:visibility="visible"
+                    android:layout_marginTop="15.7dp"/>
+
+                <FrameLayout
+                    android:id="@+id/frame_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginLeft="27.3dp"
+                        android:layout_marginRight="27.3dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8.3sp"
+                        android:textColor="#919191"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. "
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent">
+
+                        <TextView
+                            android:id="@+id/textViewTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:letterSpacing="-0.02"
+                            android:lineSpacingExtra="5sp"
+                            android:text="TextView"
+                            android:textColor="@color/blue"
+                            android:textSize="18sp"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <ImageView
+                            android:id="@+id/imageViewItem"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="matrix"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+                            />
+                        <com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayerView
+                            android:id="@+id/youtube_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+                            />
+                        <ImageView
+                            android:id="@+id/btnPlay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageViewItem"
+                            app:layout_constraintEnd_toEndOf="@+id/imageViewItem"
+                            app:layout_constraintStart_toStartOf="@+id/imageViewItem"
+                            app:layout_constraintTop_toTopOf="@+id/imageViewItem"
+                            app:srcCompat="@drawable/ic_play_36dp"/>
+                    </android.support.constraint.ConstraintLayout>
+
+                   <!-- <VideoView
+                        android:layout_gravity="center"
+                        android:id="@+id/video_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_margin="@dimen/five_dp"
+                        android:src="@drawable/event_img"/>-->
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/event_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27.3dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="1.7dp"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_news_details"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="@dimen/five_dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/nine_dp"
+                        android:textColor="#919191"
+                        android:maxLines="1"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. "
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_readMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center|right"
+                        android:layout_marginRight="2.3dp"
+                        android:text="View More"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/eleven_dp"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26.3dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="visible"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="8.3sp"
+                            android:textColor="#4fa4f2"
+                            android:layout_gravity="center|left"
+                            android:gravity="center|left"
+                            android:text="Share"
+                            android:layout_marginLeft="21.7dp"
+                            android:layout_marginTop="20.3dp"
+                            android:layout_marginBottom="18.3dp"/>
+
+
+                        <!--<ImageView
+                            android:id="@+id/download_img"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="16.3dp"
+                            android:layout_marginLeft="27.3dp"
+                            android:layout_marginBottom="22.3dp"
+                            android:src="@drawable/downloadassign"/>
+
+                        <TextView
+                            android:id="@+id/txt_downloadAttachment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="8.3sp"
+                            android:textColor="#4fa4f2"
+                            android:layout_gravity="center"
+                            android:gravity="center|left"
+                            android:layout_marginTop="16.3dp"
+                            android:layout_marginLeft="4.3dp"
+                            android:layout_marginBottom="22.3dp"
+                            android:text="Download Attachments" />-->
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:layout_marginRight="23dp"
+                        android:orientation="horizontal">
+                        <!--<TextView
+                            android:id="@+id/txt_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="8.3sp"
+                            android:textColor="#4fa4f2"
+                            android:layout_gravity="center|left"
+                            android:gravity="center|left"
+                            android:text="Share"
+                            android:layout_marginLeft="@dimen/_8dp"
+                            android:layout_marginTop="20.3dp"
+                            android:layout_marginBottom="18.3dp"/>
+-->
+
+                        <TextView
+                            android:id="@+id/txt_bookmark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="8.3sp"
+                            android:textColor="#FF9800"
+                            android:layout_gravity="center|left"
+                            android:gravity="center|left"
+                            android:text="Bookmark"
+
+                            android:layout_marginTop="20.3dp"
+                            android:layout_marginRight="6.5dp"
+                            android:layout_marginBottom="18.3dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

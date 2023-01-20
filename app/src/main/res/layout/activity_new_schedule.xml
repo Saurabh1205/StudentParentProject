@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lytTimeTable"
+    tools:context=".activities.NewScheduleActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/belowId"
+        android:visibility="visible"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/back_press"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/i_back"/>
+        <TextView
+            android:id="@+id/txt_toolbarName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left|center"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/twenty_sp"
+        android:layout_below="@+id/belowId">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:layout_marginRight="@dimen/five_dp"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_marginLeft="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:layout_marginBottom="@dimen/ten_dp"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_E"
+                        android:layout_width="38.3dp"
+                        android:layout_height="30.3dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
+                        android:layout_marginTop="42dp"
+                        android:visibility="visible"
+                        app:cardPreventCornerOverlap="true"
+                        app:contentPadding="0dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/E"
+                            android:textSize="15sp"
+                            android:layout_gravity="center"
+                            android:text="E"/>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_Sun"
+                        android:layout_width="38.3dp"
+                        android:layout_height="30.3dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
+                        android:layout_marginTop="15dp"
+                        android:visibility="visible"
+                        app:cardPreventCornerOverlap="true"
+                        app:contentPadding="0dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Sun"
+                            android:textSize="15sp"
+                            android:layout_gravity="center"
+                            android:text="S"/>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_Mon"
+                        android:layout_width="38.3dp"
+                        android:layout_height="30.3dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
+                        android:layout_marginTop="15dp"
+                        android:visibility="visible"
+                        app:cardPreventCornerOverlap="true"
+                        app:contentPadding="0dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Mon"
+
+                            android:textSize="15sp"
+                            android:layout_gravity="center"
+                            android:text="M"/>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_Tue"
+                        android:layout_width="38.3dp"
+                        android:layout_height="30.3dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
+                        android:layout_marginTop="15dp"
+                        android:visibility="visible"
+                        app:cardPreventCornerOverlap="true"
+                        app:contentPadding="0dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Tue"
+
+                            android:textSize="15sp"
+                            android:layout_gravity="center"
+                            android:text="T"/>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_Wed"
+                        android:layout_width="38.3dp"
+                        android:layout_height="30.3dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
+                        android:layout_marginTop="15dp"
+                        android:visibility="visible"
+                        app:cardPreventCornerOverlap="true"
+                        app:contentPadding="0dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Wed"
+
+                            android:textSize="15sp"
+                            android:layout_gravity="center"
+                            android:text="W"/>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_Thu"
+                        android:layout_width="38.3dp"
+                        android:layout_height="30.3dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
+                        android:layout_marginTop="15dp"
+                        android:visibility="visible"
+                        app:cardPreventCornerOverlap="true"
+                        app:contentPadding="0dp">
+
+                        <TextView
+                            android:id="@+id/Thu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="T"
+
+                            android:textSize="15sp" />
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_Fir"
+                        android:layout_width="38.3dp"
+                        android:layout_height="30.3dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
+                        android:layout_marginTop="15dp"
+                        android:visibility="visible"
+                        app:cardPreventCornerOverlap="true"
+                        app:contentPadding="0dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Fir"
+
+                            android:textSize="15sp"
+                            android:layout_gravity="center"
+                            android:text="F"/>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_Sat"
+                        android:layout_width="38.3dp"
+                        android:layout_height="30.3dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="@dimen/fourteen_dp"
+                        android:visibility="visible"
+                        app:cardPreventCornerOverlap="true"
+                        app:contentPadding="0dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Sat"
+
+                            android:textSize="15sp"
+                            android:layout_gravity="center"
+                            android:text="S"/>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/lay"
+                    android:layout_marginLeft="@dimen/five_dp"
+                    android:layout_marginTop="@dimen/two_dp"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_sub"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/two_dp"
+                        android:layout_marginLeft="@dimen/five_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
+                        android:layout_marginBottom="@dimen/two_dp"
+                        android:padding="@dimen/ten_dp"
+                        android:visibility="visible"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="10dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:contentPadding="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/fourteen_dp"
+                            android:layout_marginTop="@dimen/five_dp"
+                            android:id="@+id/viewList"
+                            android:layout_marginBottom="@dimen/fourteen_dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_today"
+                                android:layout_width="60dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="@dimen/ten_dp"
+                                android:background="@drawable/btn_round_shap_time_table_btn"
+                                android:gravity="center"
+                                android:text="Today"
+                                android:textColor="#636363"
+                                android:textSize="6.7sp" />
+
+                            <TextView
+                                android:id="@+id/txt_today_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="9.7dp"
+                                android:text="TUESDAY   22 July 2020"
+                                android:textColor="#00aeef"
+                                android:visibility="gone"
+                                android:textSize="11.7sp" />
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rec_dayList"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="10dp">
+
+                            </android.support.v7.widget.RecyclerView>
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+        <ProgressBar
+            android:id="@+id/progBarTimeTable"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/colorPrimary"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="gone" />
+
+<!--
+
+        <FrameLayout
+            android:id="@+id/frame_syllabus_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/navigation" />
+-->
+
+
+    </RelativeLayout>
+</RelativeLayout>
+

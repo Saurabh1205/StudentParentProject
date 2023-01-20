@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgrey"
+    android:padding="2dp">
+    <LinearLayout
+        android:id="@+id/lytLinear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="0.5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtSTU_DOCUMENT_NAME"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="4dp"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:background="@color/white"
+            android:textAllCaps="true"
+            android:text="Student Document"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/txtSTU_DODUMENT_DESC"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="4dp"
+            android:layout_gravity="center"
+            android:textAllCaps="true"
+            android:gravity="center|left"
+            android:text="Document Description"
+            android:background="@color/white"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyVwCertificate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytLinear">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

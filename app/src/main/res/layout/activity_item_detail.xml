@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ItemDetailActivity">
+
+    <TextView
+        android:id="@+id/textData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="5sp"
+        android:text="TextView"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizesmall"
+        android:textStyle="bold"
+        tools:text="Was india better then south africa in current serise?" />
+
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@+id/textData"
+        android:background="@color/lightgrey">
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="6dp">
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLytYoutubeVideo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <com.wordpro.studentproject.helper.TouchImageView
+                    android:id="@+id/imageViewItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="matrix" />
+
+
+                <com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayerView
+                    android:id="@+id/youtube_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewItem"
+                    app:layout_constraintEnd_toEndOf="@+id/imageViewItem"
+                    app:layout_constraintStart_toStartOf="@+id/imageViewItem"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewItem">
+
+                    <ImageView
+                        android:id="@+id/btnPlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_play_36dp" />
+
+
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLytSimpleVideo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLytSimpleText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <com.wordpro.studentproject.helper.TouchImageView
+                    android:id="@+id/imgView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/lightgrey"
+                    android:scaleType="fitCenter"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/textViewDescriptn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:padding="10dp"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="5sp"
+        android:text="TextView"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSizesmall"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="vertical"
+        tools:text="\nWas india better then south africa in current serise? \nWas india better then south africa in current serise? \nWas india better then south africa in current serise? \nWas india better then south africa in current serise? \nWas india better then south africa in current serise? \nWas india better then south africa in current serise? \nWas india better then south africa in current serise? v\nWas india better then south africa in current serise? v\nWas india better then south africa in current serise? \nWas india better then south africa in current serise? \nWas india better then south africa in current serise? \nWas india better then south africa in current serise? \nWas india better then south africa in current serise? \nWas india better then south africa in current serise? \nWas india better then south africa in current serise? \nWas india better then south africa in current serise? \nWas india better then south africa in current serise? vvvvv\nWas india better then south africa in current serise? v" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/main_linear_view"
+    tools:context=".activities.NewRightActionActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="15dp"
+        android:elevation="8dp"
+        android:layout_marginLeft="120dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+
+            tools:ignore="MissingConstraints">
+
+
+
+        <ScrollView
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="27dp"
+                android:id="@+id/allEvent"
+                android:layout_marginLeft="25dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/header_layout">
+                    <TextView
+                        android:id="@+id/imp_top_Link"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:textSize="10sp"
+                        android:text="Other " />
+
+                    <TextView
+                        android:id="@+id/imp_mid_Link"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:textColor="#4a9fec"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:textSize="10sp"
+                        android:text="Important" />
+
+                    <TextView
+                        android:id="@+id/imp_last_Link"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:textSize="10sp"
+                        android:text=" Links" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/newsHeader">
+                    <TextView
+                        android:id="@+id/action_News"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11sp"
+                        android:text="NEWS"
+                        android:textColor="#4a9fec"
+                        android:textStyle="bold"
+                        android:textSize="15sp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_marginLeft="@dimen/two_dp"
+                        android:layout_marginRight="@dimen/two_dp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/recycle_view_news"/>
+
+
+                    <TextView
+                        android:id="@+id/action_News_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:maxLines="1"
+                        android:text="News Title lorem ipsum "
+                        android:textColor="#6e6e6e"
+                        android:textSize="11.7sp"
+                        android:visibility="gone"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/action_News_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:text="01 -02 -2020  |  01:23 AM"
+                        android:textColor="#919191"
+                        android:visibility="gone"
+                        android:textSize="8.3sp" />
+
+
+                    <TextView
+                        android:id="@+id/action_News_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:text="News Title lorem ipsum "
+                        android:textStyle="bold"
+                        android:textColor="#6e6e6e"
+                        android:visibility="gone"
+                        android:textSize="11.7sp" />
+
+                    <TextView
+                        android:id="@+id/action_News_date1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:text="01 -02 -2020  |  01:23 AM"
+                        android:textColor="#919191"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:textSize="8.3sp" />
+                    <TextView
+                        android:id="@+id/action_News_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:textStyle="bold"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:text="News Title lorem ipsum "
+                        android:textColor="#6e6e6e"
+                        android:textSize="11.7sp" />
+
+                    <TextView
+                        android:id="@+id/action_News_date2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:visibility="gone"
+                        android:text="01 -02 -2020  |  01:23 AM"
+                        android:textColor="#919191"
+                        android:textSize="8.3sp" />
+
+                    <TextView
+                        android:id="@+id/viewAll_news"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp"
+                        android:padding="5dp"
+                        android:text="View All"
+                        android:textColor="#4c9ee9"
+                        android:textSize="8.3sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:background="#5c656565">
+
+                    </View>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/eventHeader">
+
+                    <TextView
+                        android:id="@+id/action_Event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11sp"
+                        android:textColor="#4a9fec"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="EVENTS"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_marginLeft="@dimen/two_dp"
+                        android:layout_marginRight="@dimen/two_dp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/recycle_view_event"/>
+
+                    <TextView
+                        android:id="@+id/action_Events_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:textColor="#6e6e6e"
+                        android:text="News Title lorem ipsum "
+                        android:textStyle="bold"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:textSize="11.7sp" />
+
+                    <TextView
+                        android:id="@+id/actionEvents_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:text="01 -02 -2020  |  01:23 AM"
+                        android:textColor="#919191"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:textSize="8.3sp"  />
+
+                    <TextView
+                        android:id="@+id/action_Events_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:text="News Title lorem ipsum "
+                        android:textStyle="bold"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:textColor="#6e6e6e"
+                        android:textSize="11.7sp" />
+
+                    <TextView
+                        android:id="@+id/actionEvents_date1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:text="01 -02 -2020  |  01:23 AM"
+                        android:textColor="#919191"
+                        android:visibility="gone"
+                        android:textSize="8.3sp"  />
+                    <TextView
+                        android:id="@+id/viewAll_events"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View All"
+                        android:textSize="8.3sp"
+                        android:textStyle="bold"
+                        android:textColor="#4c9ee9"
+                        android:padding="5dp"
+
+                        android:layout_marginTop="15sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:background="#5c656565">
+
+                    </View>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/videoHeader">
+                    <TextView
+                        android:id="@+id/action_Video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11sp"
+                        android:textColor="#4a9fec"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Video"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_marginLeft="@dimen/two_dp"
+                        android:layout_marginRight="@dimen/two_dp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/recycle_view_video"/>
+
+                    <TextView
+                        android:id="@+id/action_Video_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:textColor="#6e6e6e"
+                        android:textSize="11.7sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:text="New Event Related Images Upload"
+                        />
+
+                    <TextView
+                        android:id="@+id/action_Video_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:text="01 -02 -2020  |  01:23 AM"
+                        android:textColor="#919191"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:textSize="8.3sp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5sp"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/five_dp"
+                            android:layout_width="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageViewItem1"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="8dp"
+                                android:scaleType="matrix"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                />
+                            <com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayerView
+                                android:id="@+id/youtube_view1"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="8dp"
+                                android:visibility="gone"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                />
+                            <ImageView
+                                android:id="@+id/btnPlay1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageViewItem1"
+                                app:layout_constraintEnd_toEndOf="@+id/imageViewItem1"
+                                app:layout_constraintStart_toStartOf="@+id/imageViewItem1"
+                                app:layout_constraintTop_toTopOf="@+id/imageViewItem1"
+                                app:srcCompat="@drawable/ic_play_36dp"/>
+                        </android.support.constraint.ConstraintLayout>
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="@dimen/five_dp"
+                            android:layout_width="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageViewItem"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="8dp"
+                                android:scaleType="matrix"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+                                />
+                            <com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayerView
+                                android:id="@+id/youtube_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="8dp"
+                                android:visibility="gone"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+                                />
+                            <ImageView
+                                android:id="@+id/btnPlay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageViewItem"
+                                app:layout_constraintEnd_toEndOf="@+id/imageViewItem"
+                                app:layout_constraintStart_toStartOf="@+id/imageViewItem"
+                                app:layout_constraintTop_toTopOf="@+id/imageViewItem"
+                                app:srcCompat="@drawable/ic_play_36dp"/>
+                        </android.support.constraint.ConstraintLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/viewAll_Video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View All"
+                        android:textSize="8.3sp"
+                        android:textStyle="bold"
+                        android:textColor="#4c9ee9"
+                        android:padding="5dp"
+                        android:layout_marginTop="15sp"/>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:background="#5c656565">
+
+                    </View>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/galleryHeader">
+
+                    <TextView
+                        android:id="@+id/action_Gallery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11sp"
+                        android:textColor="#4a9fec"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="GALLERY"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_marginLeft="@dimen/two_dp"
+                        android:layout_marginRight="@dimen/two_dp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/recycle_view_gallery"/>
+
+                    <TextView
+                        android:id="@+id/action_Gallery_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:textColor="#6e6e6e"
+                        android:textSize="11.7sp"
+                        android:textStyle="bold"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:text="New Event Related Images Upload"
+                        />
+
+                    <TextView
+                        android:id="@+id/action_Gallery_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:text="01 -02 -2020  |  01:23 AM"
+                        android:textColor="#919191"
+                        android:visibility="gone"
+                        android:textSize="8.3sp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5sp"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_gal_1"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/event_img"/>
+
+                        <ImageView
+                            android:id="@+id/img_gal_2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/collage_event"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/viewAll_gallery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View All"
+                        android:textSize="8.3sp"
+                        android:textStyle="bold"
+                        android:textColor="#4c9ee9"
+                        android:padding="5dp"
+                        android:layout_marginTop="15sp"/>-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#5c656565">
+                    </View>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="invisible"
+                    android:background="#5c656565">
+
+                </View>
+            </LinearLayout>
+        </ScrollView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <ProgressBar
+        android:id="@+id/progBarTimeTable"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/colorPrimary"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="gone" />
+</RelativeLayout>

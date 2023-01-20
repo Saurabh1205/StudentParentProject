@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#ffffff"
+    tools:context="com.wordpro.studentproject.activities.LoginActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="25dp"
+            android:layout_marginBottom="40dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/appLogo"
+                android:layout_gravity="center_horizontal" />
+
+
+            <TextView
+                android:id="@+id/txt_app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily=""
+                android:gravity="center"
+                android:text="Student Academic \n Schedule Handling Application"
+                android:textColor="#3d3d3d"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+               android:gravity="center"
+                android:id="@+id/radioGroup">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:text="Student"
+                    android:id="@+id/radioButton"
+                    android:checked="true"
+                    android:textColor="#3d3d3d"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parent"
+                    android:id="@+id/radioButton2"
+                    android:checked="false"
+                    android:textColor="#3d3d3d"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txt_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="35sp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#3d3d3d"
+                android:text="Registration" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:text="Step"/>
+                <TextView
+                    android:id="@+id/txt_screen_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="#ff1a55"
+                    android:textStyle="normal"
+                    android:text=" 1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:text=" of 2"/>
+            </LinearLayout>
+
+
+            <!-- Email Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:id="@+id/textIC_layout_view"
+                android:layout_marginBottom="3dp">
+                <EditText
+                    android:id="@+id/edtInstituteCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingLeft="35dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="7dp"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/btn_round_shap_login"
+                    android:hint="Institute Code"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Password Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginTop="3dp"
+                android:id="@+id/textLD_layout_view"
+                android:layout_marginBottom="3dp">
+                <EditText
+                    android:id="@+id/edtLoginId"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingLeft="35dp"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/btn_round_shap_login"
+                    android:hint="Login Id"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:id="@+id/textMOB_layout_view"
+                android:layout_marginBottom="3dp">
+                <EditText
+                    android:id="@+id/edtMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingLeft="35dp"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:maxLength="10"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/btn_round_shap_login"
+                    android:hint="Mobile No"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:id="@+id/textPASS_layout_view"
+                android:layout_marginBottom="3dp">
+                <EditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingLeft="35dp"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/btn_round_shap_login"
+                    android:hint="Password"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/textPin1_layout_view"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp">
+                <EditText
+                    android:id="@+id/edtPIN1"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingLeft="35dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="25dp"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/btn_round_shap_login"
+                    android:hint="Enter 4 Digit Pin"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/textPin2_layout_view"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp">
+                <EditText
+                    android:id="@+id/edtPIN2"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingLeft="35dp"
+                    android:visibility="gone"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/btn_round_shap_login"
+                    android:hint="Re-Enter Pin"/>
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:id="@+id/back_press"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:gravity="center|left"
+                android:paddingLeft="12dp"
+                android:paddingRight="22dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/icon_new_back"
+                android:textColor="#F1C40F"
+                android:textStyle="normal"
+                android:visibility="gone"
+                android:text="Back To Edit Login Details"/>
+            <!-- <android.support.v7.widget.AppCompatButton
+                 android:id="@+id/email_sign_in_button"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="24dp"
+                 android:padding="10dp"
+                 android:textColor="#ffffff"
+                 android:textSize="20sp"
+                 android:textStyle="bold"
+                 android:background="@drawable/btn_round_shap_login_btn"
+                 android:text="Next"/>-->
+
+
+            <Button
+                android:id="@+id/email_sign_in_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@drawable/btn_round_shap_login_btn"
+                android:text="Next"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/login_progress"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:indeterminateTint="@color/colorPrimary"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="gone" />
+</LinearLayout>
+
+

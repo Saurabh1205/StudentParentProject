@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/startView"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activities.FeesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:id="@+id/belowId"
+        android:visibility="visible"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/back_press"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/i_back"/>
+        <TextView
+            android:id="@+id/txt_toolbarName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left|center"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_below="@+id/belowId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:overScrollMode="always">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_CompleteFee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24.3dp"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
+                        android:layout_marginBottom="@dimen/five_dp"
+                        android:visibility="visible"
+                        app:cardBackgroundColor="#f9ad81"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="10dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:contentPadding="0dp">
+
+                        <TextView
+                            android:id="@+id/txt_CompleteFee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:paddingRight="@dimen/ten_dp"
+                            android:text="Complete Fees"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_Academic_Fees"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24.3dp"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
+                        android:layout_marginBottom="@dimen/five_dp"
+                        android:visibility="visible"
+                        app:cardBackgroundColor="#f9ad81"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="10dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:contentPadding="0dp">
+
+                        <TextView
+                            android:id="@+id/txt_Academic_Fees"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:paddingRight="@dimen/ten_dp"
+                            android:text="Academic Fees"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_Non_Academic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24.3dp"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
+                        android:layout_marginBottom="@dimen/five_dp"
+                        android:visibility="visible"
+                        app:cardBackgroundColor="#f9ad81"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="10dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:contentPadding="0dp">
+
+                        <TextView
+                            android:id="@+id/txt_Non_Academic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:paddingRight="@dimen/ten_dp"
+                            android:text="Non Academic Fees"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_Outstanding_Fees"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24.3dp"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
+                        android:layout_marginBottom="@dimen/five_dp"
+                        android:visibility="visible"
+                        app:cardBackgroundColor="#f9ad81"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="10dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:contentPadding="0dp">
+
+                        <TextView
+                            android:id="@+id/txt_Outstanding_Fees"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:paddingRight="@dimen/ten_dp"
+                            android:text="Outstanding Fees"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_Exam_Fees"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24.3dp"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
+                        android:layout_marginBottom="@dimen/five_dp"
+                        android:visibility="visible"
+                        app:cardBackgroundColor="#f9ad81"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="10dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:contentPadding="0dp">
+
+                        <TextView
+                            android:id="@+id/txt_Exam_Fees"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:paddingRight="@dimen/ten_dp"
+                            android:text="Exam Fees"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp" />
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ten_dp"
+                    android:orientation="vertical">
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_sub"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/two_dp"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
+                        android:layout_marginBottom="@dimen/two_dp"
+                        android:padding="@dimen/ten_dp"
+                        android:visibility="visible"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="10dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:contentPadding="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/ten_dp"
+                            android:layout_marginRight="@dimen/ten_dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="@dimen/ten_dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="10sp"
+                                android:textColor="#2673ba"
+                                android:text="2019 -2020"
+                                android:visibility="gone"
+                                android:id="@+id/txt_date"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="13.3sp"
+                                android:textColor="#6e6e6e"
+                                android:text="Complete Fees (Academic + Non Academic)"
+                                android:id="@+id/txt_Fee_name"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/ten_dp"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+                                <TextView
+                                    android:id="@+id/txt_totalfee"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="6.7sp"
+                                    android:textColor="#00a651"
+                                    android:layout_weight="1"
+                                    android:text="Total Fees Received" />
+
+                                <TextView
+                                    android:id="@+id/txt_Outstanding"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="6.7sp"
+                                    android:textColor="#f26d7d"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:text="Balance" />
+
+                                <TextView
+                                    android:id="@+id/txt_Adj"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="6.7sp"
+                                    android:textColor="#f26d7d"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Adjustment" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/ten_dp"
+                                android:weightSum="3"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="@dimen/five_dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/txt_total_fee_value"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="14.7sp"
+                                        android:textColor="#00a651"
+                                        android:text="0" />
+                                    <TextView
+                                        android:layout_marginLeft="@dimen/two_dp"
+                                        android:layout_marginRight="@dimen/two_dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="/"/>
+                                    <TextView
+                                        android:id="@+id/txt_outVal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="14.7sp"
+                                        android:textColor="#555555"
+                                        android:text="0" />
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_gravity="center"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#f26d7d"
+                                    android:gravity="center"
+                                    android:id="@+id/txt_Outsatnding_val"
+                                    android:text="0"/>
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_gravity="center"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#f26d7d"
+                                    android:id="@+id/txt_Adju_val"
+                                    android:gravity="center"
+                                    android:text="0"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_Header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/two_dp"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
+                        android:layout_marginBottom="@dimen/two_dp"
+                        android:padding="@dimen/ten_dp"
+                        android:visibility="visible"
+                        app:cardCornerRadius="1dp"
+                        app:cardElevation="10dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:contentPadding="0dp">
+
+                        <TextView
+                            android:id="@+id/txt_HeaderName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/ten_dp"
+                            android:visibility="gone"
+                            android:text="ACADEMIC FEE"/>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/fee_recycle_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/five_dp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:layout_marginRight="@dimen/five_dp" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:text="NOTES"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal"
+                android:text="1. Fee-receipts given by Account-section will be considered as an authenticate document."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal"
+                android:text="2. Discrepancy related to Payable should be communicated to Account-Section."/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progBarTimeTable"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/colorPrimary"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="gone" />
+</LinearLayout>

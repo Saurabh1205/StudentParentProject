@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trans"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_arrivals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/five_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:layout_marginRight="@dimen/five_dp"
+        android:layout_marginBottom="@dimen/five_dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="true"
+        app:contentPadding="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:src="@drawable/calender" />
+
+                        <TextView
+                            android:id="@+id/txtArrivalDt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="12 March 2019"
+                            android:textAllCaps="true"
+                            android:textColor="@color/text_blue"
+                            android:textSize="@dimen/textSize"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:src="@drawable/subject" />
+
+                        <TextView
+                            android:id="@+id/txtbookTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="LET US C"
+                            android:textAllCaps="true"
+                            android:textColor="#636363"
+                            android:textSize="@dimen/textSize"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:src="@drawable/author" />
+
+                        <TextView
+                            android:id="@+id/txtAuthor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Book by Yashwant Kanetkar"
+                            android:textColor="#464646"
+                            android:textSize="@dimen/textSizesmall" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:src="@drawable/publication" />
+
+                        <TextView
+                            android:id="@+id/txtPublication"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="The McGraw-Hill Companies"
+                            android:textColor="#464646"
+                            android:textSize="@dimen/textSizesmall" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_book" />
+
+                        <TextView
+                            android:id="@+id/txtISBNNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="ISBN number : KKW2019B1"
+                            android:textColor="#464646"
+                            android:textSize="@dimen/textSizesmall"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgCoverPg"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center|start|top"
+                        android:fitsSystemWindows="true"
+                        android:src="@drawable/ic_book" />
+
+                    <TextView
+                        android:id="@+id/txtPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Price : 250 ₹"
+                        android:textAllCaps="true"
+                        android:textColor="#464646"
+                        android:textSize="@dimen/textSize" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Synonym"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_blue"
+                    android:textSize="@dimen/textSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtSynonym"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLines="3"
+                    android:layout_weight="1"
+                    android:text="Master programmer and best-selling author Herb Schildt has updated and expanded his classic reference to C++. Using expertly crafted explanations, insider tips, and hundreds of examples, Schildt explains and demonstrates every aspect of C++. Inside you'll find details on the entire C++ language, including its keywords, operators, preprocessor directives, and libraries. There is even a synopsis of the extended keywords used for .NET programming. Of course, everything is presented in the clear, crisp, uncompromising style that has made Herb Schildt the choice of millions. Whether you're a beginning programmer or a seasoned pro, the answers to all your C++ questions can be found in this lasting resource."
+                    android:textColor="#464646"
+                    android:textSize="@dimen/textSizesmall" />
+                <Button
+                    android:id="@+id/btShowmore"
+                    android:layout_width="wrap_content"
+                    android:text="Showmore..."
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSizesmall"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:background="@android:color/transparent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

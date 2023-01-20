@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtNewsGroupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GROUP NAME"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:gravity="center|left"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="5dp"
+        android:visibility="visible"
+        android:layout_margin="5dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyVwNewsGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNewsGroupName">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

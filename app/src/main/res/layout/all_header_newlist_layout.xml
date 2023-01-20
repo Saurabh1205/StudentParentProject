@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lay_e_n"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/action_News_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:text="News Title lorem ipsum "
+            android:textColor="#6e6e6e"
+            android:textSize="11.7sp" />
+
+        <TextView
+            android:id="@+id/action_News_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:text="01 -02 -2020  |  01:23 AM"
+            android:textColor="#919191"
+            android:textSize="8.3sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5sp"
+            android:visibility="gone"
+            android:id="@+id/video_layout"
+            android:orientation="horizontal">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_height="match_parent"
+
+                android:layout_marginRight="@dimen/five_dp"
+                android:layout_width="100dp">
+
+                <ImageView
+                    android:id="@+id/imageViewItem1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="matrix"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+                <com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayerView
+                    android:id="@+id/youtube_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+                <ImageView
+                    android:id="@+id/btnPlay1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewItem1"
+                    app:layout_constraintEnd_toEndOf="@+id/imageViewItem1"
+                    app:layout_constraintStart_toStartOf="@+id/imageViewItem1"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewItem1"
+                    app:srcCompat="@drawable/ic_play_36dp"/>
+            </android.support.constraint.ConstraintLayout>
+            <!--<android.support.constraint.ConstraintLayout
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="@dimen/five_dp"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageViewItem"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="matrix"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+                    />
+                <com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayerView
+                    android:id="@+id/youtube_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+                    />
+                <ImageView
+                    android:id="@+id/btnPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewItem"
+                    app:layout_constraintEnd_toEndOf="@+id/imageViewItem"
+                    app:layout_constraintStart_toStartOf="@+id/imageViewItem"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewItem"
+                    app:srcCompat="@drawable/ic_play_36dp"/>
+            </android.support.constraint.ConstraintLayout>-->
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/gallery_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5sp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_gal_1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/event_img"/>
+
+           <!-- <ImageView
+                android:id="@+id/img_gal_2"
+                android:layout_marginLeft="5dp"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/collage_event"/>
+-->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

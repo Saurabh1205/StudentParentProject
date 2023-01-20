@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblListCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:textSize="@dimen/txtSizeOne"
+                android:text="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/lblListHeader"
+                android:layout_width="314dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="News Name"
+                android:paddingStart="@dimen/five_dp"
+                android:maxLines="2"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/fourteen_dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblListWeightage"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="@dimen/txtSizeOne"
+                android:text="10"
+                android:visibility="invisible"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/itemCount"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/fourteen_dp"
+                android:background="@color/blue"
+                android:text="03"
+                android:layout_marginRight="@dimen/_8dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+        </LinearLayout>
+</LinearLayout>

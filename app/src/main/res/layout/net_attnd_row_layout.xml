@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:padding="0.5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtSubjectName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:text="Subject"
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:textSize="@dimen/txtSizeOne"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-smallcaps"/>
+
+
+        <TextView
+            android:id="@+id/txtStudPrsntCount"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="Present"
+            android:background="@color/white"
+            android:textSize="@dimen/txtSizeOne"
+            android:layout_marginRight="0.5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-smallcaps"/>
+        <TextView
+            android:id="@+id/txtTotLec"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="Total Period"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:layout_marginRight="0.5dp"
+            android:gravity="center"
+            android:textSize="@dimen/txtSizeOne"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-smallcaps"/>
+        <TextView
+            android:id="@+id/txtPercent"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="Percentage"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:layout_marginRight="0.5dp"
+            android:gravity="center"
+            android:textSize="@dimen/txtSizeOne"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-smallcaps"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

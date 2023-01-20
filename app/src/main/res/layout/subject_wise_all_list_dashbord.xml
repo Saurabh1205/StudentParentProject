@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="2dp"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:layout_marginRight="@dimen/five_dp"
+            android:layout_marginBottom="@dimen/five_dp"
+            android:layout_marginTop="2dp"
+            android:visibility="visible"
+            android:padding="@dimen/ten_dp"
+            app:cardPreventCornerOverlap="false"
+            app:contentPadding="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_present"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fourteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="PRESENT"
+                    android:visibility="gone"
+                    android:textSize="8.3sp"
+                    android:textColor="#39b54a" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:visibility="invisible"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/txt_date"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="8.3sp"
+                        android:textColor="#b3b3b3"
+                        android:text="15/10/2020"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:layout_marginBottom="@dimen/five_dp"
+                        android:layout_marginLeft="@dimen/fourteen_dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_time"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="8.3sp"
+                        android:textColor="#b3b3b3"
+                        android:gravity="right"
+                        android:layout_marginRight="@dimen/five_dp"
+                        android:text="12:45 PM to 1:45 PM"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:layout_marginLeft="@dimen/fourteen_dp"/>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_weight="2.1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="#6e6e6e"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/fourteen_dp"
+                        android:textSize="13.3sp"/>
+
+                    <TextView
+                        android:layout_weight="0.5"
+                        android:id="@+id/txt_Theory"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="[Theory]"
+                        android:digits="abcdefghijklmnopqrstuvwxyz"
+                        android:textColor="#4fa4f2"
+                        android:visibility="gone"
+                        android:layout_marginLeft="@dimen/fourteen_dp"
+                        android:textSize="6.7sp"/>
+                    <TextView
+                        android:layout_weight="0.5"
+                        android:id="@+id/txt_Regular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="[Regular]"
+                        android:digits="abcdefghijklmnopqrstuvwxyz"
+                        android:textColor="#4fa4f2"
+                        android:visibility="gone"
+                        android:layout_marginLeft="@dimen/fourteen_dp"
+                        android:textSize="6.7sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/wise_attendance"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textColor="#6e6e6e"
+                        android:layout_marginLeft="@dimen/fourteen_dp"
+                        android:visibility="gone"
+                        android:text="Subject wise Attendance"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/wise_Value"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:textSize="8.3sp"
+                        android:textColor="#6e6e6e"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/fourteen_dp"
+                        android:visibility="gone"
+                        android:background="@drawable/btn_round_shap_attendance_btn"
+                        />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#5c656565"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:visibility="invisible"
+                    android:layout_marginTop="6.7dp"/>
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13.7sp"
+                    android:textColor="#6e6e6e"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginLeft="@dimen/fourteen_dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txt_basic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:textColor="#b7b7b7"
+                    android:layout_marginLeft="@dimen/fourteen_dp"
+                    android:visibility="invisible"
+                    android:text="3.2 Related Search Basics"
+                    android:layout_marginBottom="@dimen/five_dp"
+                    />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@color/white"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearBg"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center|left"
+        android:paddingRight="3dp"
+        android:text="Marked Attendance"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSizesmall"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/imp_Link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:text="Other Importance Link" />
+
+
+        <TextView
+            android:id="@+id/action_News"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20sp"
+            android:text="News"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/action_News_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20sp"
+            android:text="New Title "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/action_News_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20sp"
+            android:text="News_Date"
+            android:textSize="20sp" />
+
+
+       <TextView
+            android:id="@+id/viewAll_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ViewAll"
+            android:textSize="20dp"
+            android:background="@color/blue"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20sp"/>
+
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:background="#5c656565">
+
+        </view>
+
+
+        <TextView
+            android:id="@+id/action_Event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20sp"
+            android:text="Events"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/action_Events_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20sp"
+            android:text="Events Title "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/actionEvents_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20sp"
+            android:text="Events_Date"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/viewAll_events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ViewAll"
+            android:textSize="20dp"
+            android:background="@color/blue"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20sp"/>
+
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:background="#5c656565">
+
+        </view>
+
+        <TextView
+            android:id="@+id/action_Gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20sp"
+            android:text="Gallery"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/action_Gallery_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20sp"
+            android:text="GalleryTitle "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/action_Gallery_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20sp"
+            android:text="Gallery_Date"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/viewAll_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ViewAll"
+            android:textSize="20dp"
+            android:background="@color/blue"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20sp"/>
+
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:background="#5c656565">
+
+        </view>
+
+    </LinearLayout>
+
+</LinearLayout>

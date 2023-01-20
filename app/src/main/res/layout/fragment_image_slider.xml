@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/lightgrey"
+        android:text="1"
+        android:textStyle="bold"
+        android:id="@+id/lbl_count"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/lightgrey"
+        android:id="@+id/title"
+        android:text="1"
+        android:textSize="@dimen/textMedium"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/lightgrey"
+        android:text="1"
+        android:id="@+id/date"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/textHeading"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two_dp"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:layout_marginRight="@dimen/five_dp"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:padding="@dimen/ten_dp"
+            android:visibility="visible"
+            app:cardCornerRadius="1dp"
+            app:cardElevation="3dp"
+            app:cardPreventCornerOverlap="true"
+            app:contentPadding="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Header Name"
+                android:layout_margin="@dimen/five_dp"
+                android:textSize="@dimen/thirteen_dp"
+                android:textStyle="bold"
+                android:id="@+id/txt_header"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_margin="@dimen/five_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chaild_recycleView"/>
+    </LinearLayout>
+
+</LinearLayout>

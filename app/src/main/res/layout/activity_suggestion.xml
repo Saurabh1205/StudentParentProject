@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relvtLyt"
+    tools:context=".activities.Library.SuggestionActivity">
+
+    <TextView
+        android:id="@+id/txthead"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Book Suggestion"
+        android:textSize="@dimen/textHeading"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"/>
+
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your suggestion for the new requirement of Books"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_below="@+id/txthead"
+        android:textColor="@color/colorPrimary"/>
+
+    <ScrollView
+        android:layout_below="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edtbox"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtBookType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center|left"
+                    android:padding="2dp"
+                    android:text="Book Type"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spinnerBookType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSizesmall"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edtbox"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center|left"
+                    android:padding="2dp"
+                    android:text="Book Title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edtBkTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter book title"
+                    android:textSize="@dimen/textSizesmall"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edtbox"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtAuthor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center|left"
+                    android:padding="2dp"
+                    android:text="Author name"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edtAuthorNm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter author name"
+                    android:textSize="@dimen/textSizesmall"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edtbox"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtPublication"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center|left"
+                    android:padding="2dp"
+                    android:text="Publication name"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edtPublication"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter publication name"
+                    android:textSize="@dimen/textSizesmall"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edtbox"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center|left"
+                    android:padding="2dp"
+                    android:text="Language"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edtLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter language name"
+                    android:textSize="@dimen/textSizesmall"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edtbox"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center|left"
+                    android:padding="2dp"
+                    android:text="Approximate Price (in rupees ₹)"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edtPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter approximate price"
+                    android:textSize="@dimen/textSizesmall"
+                    android:inputType="numberDecimal"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edtbox"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center|left"
+                    android:padding="2dp"
+                    android:text="Description (250 characters)"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edtDescrptn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter description"
+                    android:textSize="@dimen/textSizesmall"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnSubmit"
+        android:text="Submit"
+
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_round_shap_login_btn"
+        />
+
+</RelativeLayout>

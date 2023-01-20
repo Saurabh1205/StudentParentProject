@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "837373749781",
+    "firebase_url": "https://sasha-cbe2b.firebaseio.com",
+    "project_id": "sasha-cbe2b",
+    "storage_bucket": "sasha-cbe2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837373749781:android:aa99e381ce7c8158",
+        "android_client_info": {
+          "package_name": "com.wordpro.studentproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837373749781-vqequaiq1g316du935cmlghsgdmse2id.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wordpro.studentproject",
+            "certificate_hash": "5229c519b6768e0541cc6feaadcb88bde8b8cb7d"
+          }
+        },
+        {
+          "client_id": "837373749781-tacqv8rsuqd6nk05rcq2c3s4n24s0tlo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEibi9OnsfXSiSQsyJv1gY45aVaxpYS4o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837373749781-tacqv8rsuqd6nk05rcq2c3s4n24s0tlo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

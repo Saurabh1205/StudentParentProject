@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_rule"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/five_dp"
+        android:layout_marginLeft="@dimen/five_dp"
+        android:layout_marginRight="@dimen/five_dp"
+        android:layout_marginBottom="@dimen/two_dp"
+        android:padding="@dimen/ten_dp"
+        android:visibility="visible"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:contentPadding="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8.3sp"
+                android:textColor="#6e6e6e"
+                android:text="Library Name"
+                android:id="@+id/txt_Tu_Fee"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txt_bookTypeDes"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="6.7sp"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:textColor="#00a651"
+                    android:text="Book Type Description"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txt_bookRuleType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="6.7sp"
+                    android:gravity="right"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:textColor="#00a651"
+                    android:text="BOOK_RULE_TYPE"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txt_total_Tu_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16.7sp"
+                    android:textColor="#00a651"
+                    android:text="35000" />
+                <TextView
+                    android:layout_marginLeft="@dimen/two_dp"
+                    android:layout_marginRight="@dimen/two_dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"/>
+                <TextView
+                    android:id="@+id/txt_tu_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16.7sp"
+                    android:textColor="#555555"
+                    android:text="35000" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="#efefef"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/txt_Pending"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="6.7sp"
+                    android:gravity="center"
+                    android:textColor="#00a651"
+                    android:text="Balance"/>
+                <!--  <TextView
+                      android:id="@+id/txt_Adjustment"
+                      android:layout_weight="1"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:textSize="6.7sp"
+                      android:gravity="center"
+                      android:visibility="gone"
+                      android:textColor="#00a651"
+                      android:text="Adjustment"/>-->
+                <TextView
+                    android:id="@+id/txt_Adjustment"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="6.7sp"
+                    android:gravity="center"
+                    android:textColor="#00a651"
+                    android:text="Adjustment"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/txt_Pen_val"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:textColor="#00a651"
+                    android:text="0"/>
+                <!-- <TextView
+                     android:id="@+id/txt_Adj_val"
+                     android:layout_weight="1"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:textSize="10sp"
+                     android:gravity="center"
+                     android:textColor="#00a651"
+                     android:text="0"/>-->
+                <TextView
+                    android:id="@+id/txt_Adj_val"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:textColor="#00a651"
+                    android:text="0"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

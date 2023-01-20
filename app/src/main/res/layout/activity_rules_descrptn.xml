@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rulesLyt"
+    tools:context=".activities.Library.RulesDescrptnActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/firstLyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:id="@+id/belowId"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/back_press"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="left|center"
+                    android:gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:src="@drawable/i_back"/>
+                <TextView
+                    android:layout_weight="2"
+                    android:id="@+id/txt_toolbarName"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:text="RULES"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+           <!-- <TextView
+                android:id="@+id/txtRules"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="RULES"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textHeading" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorAccent">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E5E4E2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/studentblue" />
+
+                    <TextView
+                        android:id="@+id/txtStudName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="Student Name"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/txtSizeOne"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/yearblue" />
+
+                    <TextView
+                        android:id="@+id/txtYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="year"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/txtSizeOne"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E5E4E2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/semesterblue" />
+
+                    <TextView
+                        android:id="@+id/txtSem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="Semester"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/txtSizeOne"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/sectionblue" />
+
+                    <TextView
+                        android:id="@+id/txtSection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="section"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/txtSizeOne"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorAccent">
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyVwRules"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLytSlab"
+                android:visibility="gone"
+                android:background="@color/lightgrey">
+
+                <TextView
+                    android:id="@+id/txtNo"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:layout_margin="0.5dp"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                    android:text="Sr no"
+                    android:layout_gravity="center|left"/>
+
+
+                <TextView
+                    android:id="@+id/txtslabDescrptn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:layout_margin="0.5dp"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                    android:text="Slab \nDescription"
+                    android:layout_weight="1"
+                    android:layout_gravity="center|left"/>
+
+                <TextView
+                    android:id="@+id/txtslabtype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:layout_margin="0.5dp"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                    android:text="Slab \nType"
+                    android:layout_weight="1"
+                    android:layout_gravity="center|left"/>
+
+                <TextView
+                    android:id="@+id/txtCalcuType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_margin="0.5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:padding="4dp"
+                    android:text="Calculation \nType"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtslabFrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:layout_margin="0.5dp"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                    android:text="Slab \nFrom"
+                    android:layout_weight="1"
+                    android:layout_gravity="center|left"/>
+
+                <TextView
+                    android:id="@+id/txtslabupto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:layout_margin="0.5dp"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                    android:text="Slab \nUpto"
+                    android:layout_weight="1"
+                    android:layout_gravity="center|left"/>
+
+                <TextView
+                    android:id="@+id/txtslabCharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:layout_margin="0.5dp"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                    android:text="Slab \nCharges"
+                    android:layout_weight="1"
+                    android:layout_gravity="center|left"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyVwSlab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

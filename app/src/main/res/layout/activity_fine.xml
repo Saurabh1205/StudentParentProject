@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Library.FineActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtFine"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center|right"
+                android:text="Fine"
+                android:textAllCaps="true"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textHeading"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtSessionYear"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center|right"
+                android:text="( 2018-2019 )"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textHeading"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/studentblue" />
+
+                <TextView
+                    android:id="@+id/txtStudName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Student Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/txtSizeOne"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/yearblue" />
+
+                <TextView
+                    android:id="@+id/txtYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="year"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/txtSizeOne"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/semesterblue" />
+
+                <TextView
+                    android:id="@+id/txtSem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Semester"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/txtSizeOne"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/sectionblue" />
+
+                <TextView
+                    android:id="@+id/txtSection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="section"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/txtSizeOne"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/lightgrey">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    android:id="@+id/txtBkName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/lightgrey"
+                    android:text="Book Name"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/textSize"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="left|start"
+                    android:layout_margin="1dp"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/txtExptdDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/lightgrey"
+                    android:text="Expected return date"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/textSize"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="left|start"
+                    android:layout_margin="1dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtActualRetrnDt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/lightgrey"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/textSize"
+                    android:text="Actual return date"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="left|start"
+                    android:layout_margin="1dp"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/txtFineDue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/lightgrey"
+                    android:paddingLeft="5dp"
+                    android:text="Fine due (₹)"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                    android:gravity="left|start"
+                    android:layout_margin="1dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtfinePaid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/lightgrey"
+                    android:paddingLeft="5dp"
+                    android:text="Fine paid (₹)"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/textSize"
+                    android:textStyle="bold"
+                    android:gravity="left|start"
+                    android:layout_margin="1dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtFineOutstd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/lightgrey"
+                    android:paddingLeft="5dp"
+                    android:text="Fine outstanding(₹)"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/textSize"
+                    android:gravity="left|start"
+                    android:textStyle="bold"
+                    android:layout_margin="1dp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"></LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyVwFine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtTotalBalncFine"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:text="Total Fine Outstanding  :  20.00"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/textSize"
+        android:paddingRight="20dp"
+        android:layout_gravity="center"
+        android:gravity="center|right"
+        android:layout_margin="1dp"
+        android:textColor="@color/black" />
+
+
+</RelativeLayout>

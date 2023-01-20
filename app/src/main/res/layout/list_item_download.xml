@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lightgrey"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp"
+        android:layout_marginLeft="@dimen/two_dp"
+        android:layout_marginRight="@dimen/two_dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="visible"
+        android:padding="@dimen/ten_dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECF0F1"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imgVwDownloadfile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="start|center"
+                android:layout_margin="10dp"
+                android:src="@drawable/assignicon"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_margin="1dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/lblDocName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textColor="@color/gray_black"
+                        android:text="hkkklllllllll"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="8dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_margin="1dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lblSubmDate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/selector_color"
+                        android:text="hkkklllllllll"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="8dp"
+                        />
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/lblSOFT_COPY_PATH"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="hkkklllllllll"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/lblOrignalFileName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="hkkklllllllll"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="8dp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgVwDownload"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="start|center"
+                android:layout_margin="10dp"
+                android:src="@drawable/downloadassign"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

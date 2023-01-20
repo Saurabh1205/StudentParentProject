@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wordpro.studentproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.Manifest.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_ALL_DOWNLOADS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.MEDIA_CONTENT_CONTROL"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="com.android.providers.media.MediaProvider" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/new_logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/networksecurityconfig"
+        android:roundIcon="@drawable/new_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.NoticDetailsJobTypeActivity"></activity>
+        <activity android:name=".activities.LibraryDetailsActivity" />
+        <activity android:name=".activities.LibraryActivity" />
+        <activity android:name=".activities.D_Wallet_Activity" />
+        <activity android:name=".activities.Alert_Info_Activity" />
+        <activity android:name=".activities.AlertInfoNotificationActivity" />
+        <activity android:name=".activities.E_Learning_Activity" />
+        <activity android:name=".activities.FeesActivity" />
+        <activity android:name=".activities.NewScheduleActivity" />
+        <activity android:name=".activities.SyllabusNewActivity" />
+        <activity android:name=".activities.AttendanceActivity" />
+        <activity android:name=".activities.NewsAllViewDetailsList" />
+        <activity android:name=".activities.GalleryMobileActivity" />
+        <activity android:name=".activities.ShowDetailsViewActivity" />
+        <activity android:name=".activities.YouTubeAllVideoDetails" />
+        <activity
+            android:name=".activities.VideoViewActionActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activities.VideoViewActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".activities.NavigationDrawerActivity" />
+        <activity
+            android:name=".activities.NewRightActionActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activities.NewRightEventActionActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activities.NewRightGalleryActionActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activities.OTPActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activities.VerficationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activities.NavigationActivity"
+            android:label="@string/title_activity_navigation"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- android:theme="@style/AppTheme.NoActionBar" -->
+        <activity
+            android:name=".activities.schedule_menu.SelfTimeTableActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.syllabus_menu.TeachPlanSubjActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.syllabus_menu.TeachingPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.syllabus_menu.SubjectwiseFacultyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.attendance_menu.NetAttendanceActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.syllabus_menu.UnivSubjectActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.syllabus_menu.UniversitySyllbusActivity" />
+        <activity
+            android:name=".activities.syllabus_menu.SyllStatusActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.syllabus_menu.GraphViewActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.attendance_menu.DayWiseAttendActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.attendance_menu.SpanWiseAttendActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.attendance_menu.SubjectWiseAttendActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.attendance_menu.SubjectAttendDetailActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.schedule_menu.ExtraLectureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.schedule_menu.SubjectwiseBatchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Payables.AcadFeesActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.Payables.NonAcademicFeeActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.Payables.CompleteFeesActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.profile_menu.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" /> <!-- android:theme="@style/MyMaterialTheme" -->
+        <activity
+            android:name=".activities.e_learning_menu.E_LearnAssignActivity"
+            android:label="@string/title_activity_e__learn_assign"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme" /> <!-- android:theme="@style/MyMaterialTheme" -->
+        <activity
+            android:name=".activities.e_learning_menu.NotesActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".receivers.CheckNetworkconnectivityReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver> <!-- Firebase Notifications -->
+        <service android:name=".services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".services.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service> <!-- ./Firebase Notifications -->
+        <activity android:name=".activities.NotificationActivity" />
+        <activity
+            android:name=".activities.JobsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.JobDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.YoutubeListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ItemDetailActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.schedule_menu.NewTimetblActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.Library.RulesDescrptnActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.Library.SuggestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Library.ReserveActivity"
+            android:screenOrientation="portrait" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".activities.certificate.CertificateApplnActivity" />
+        <activity android:name=".activities.certificate.StudentDtlsActivity" />
+        <activity
+            android:name=".activities.Library.IssueBookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Library.NewArrivalMonthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Library.NewArrivalsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Library.FineActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activities.Library.SearchBookActivity" />
+        <activity android:name=".activities.Library.SearchedBookActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,1305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightgrey"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Name as per TC "
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtNameTC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:text=": Name as per TC"
+                android:background="@color/white"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Date of Birth"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtDOB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text=": DOB"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAllCaps="true"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Birth Place"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtBirthPlace"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text=": Birth Place	"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Nationality : "
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtNationality"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text="INDIAN"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Religion"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtReligion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:text=": Religion"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text="Gender"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtGender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text=": Gender"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:text="Domicile State"
+                android:background="@color/white"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtDomicileState"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text=": Birth Place	"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text="Category : "
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtCatgry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:text=": OBC"
+                android:background="@color/white"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Caste"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtCaste"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text=": Caste"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text="Sub Caste"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtSubcaste"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text=": Sub Caste"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:text="Caste as per TC"
+                android:background="@color/white"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtCasteTc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text=": Caste as per TC"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text="Mother Tongue"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtMotherTongue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:text=": Mother Tongue"
+                android:background="@color/white"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text="Last School/College"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtLastSchlClg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text=": Last School/College"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:textAllCaps="true"
+                android:text="Qualification Exam"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtQualifExam"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text=": Qualification Exam"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="EXAM Roll No."
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtExamRollNo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:text=": ENTR EXAM Roll No"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Mark Score : "
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtMarkScore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Mark Score"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Mobile No"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:text=": Mobile No"
+                android:background="@color/white"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text="Guardian Mobile No."
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtGuardianMblNo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text=": Guardian Mobile No."
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text="Mother's Name"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtMotherName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text=": Mother's Name"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAllCaps="true"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Parent Mobile No : "
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtParentMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Parent Mobile No"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Enrollment Number"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtEntrollmentNo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:text=": Entrollment Number"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAllCaps="true"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Migration Number"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtMigrationNo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text=": Migration Number	"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:text="Guardian EmailId"
+                android:background="@color/white"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtGuardianEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text=": Guardian EmailId"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text="Father EmailId : "
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtFatherEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:text=": Father EmailId"
+                android:background="@color/white"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Mother EmailID"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtMotherEmailID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text=": Mother EmailID"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text="Dte User Id"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtDteUserId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text=": Dte User Id"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:text="Dte User Password"
+                android:background="@color/white"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtDteUserPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text=": Dte User Password"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Mother's Domicile maharashtra"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtMotherDomicleMaharsht"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:text=": Mother Tongue"
+                android:background="@color/white"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="NRI POI"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtNRI_POI"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text=": NRI POI"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Birth State Code"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtBirthStateCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text=": Birth State Code"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Bloodgroup"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtBloodgroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:text=":Blood group"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAllCaps="true"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Parent Occupation : "
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtParentOccupation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Parent Occupation	"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:text="Parent Income"
+                android:background="@color/white"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtParentIncome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text=": Parent Income"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Hobby"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtHobby"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:text=": Hobby"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Domicile Country Other"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtDomicileCountryOther"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text=": Domicile Country Other"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAllCaps="true"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text="Landline Number"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtLandlineNo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text=": Landline Number"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:textAllCaps="true"
+                android:text="Father's Domicle maharashtra"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtFatherDomMahrshtr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:text=":Blood group"
+                android:background="@color/white"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text="Previous Education For Preceding 3Years in maharashtra"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtPrevEduPreced"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text=""
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt39"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text="Permanent Address"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtPermanentAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:text=""
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt40"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:textAllCaps="true"
+                android:text="Correspondance Address"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtCorrespondanceAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="4dp"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:text=""
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

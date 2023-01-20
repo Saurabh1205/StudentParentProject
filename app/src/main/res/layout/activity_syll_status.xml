@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.wordpro.studentproject.activities.syllabus_menu.SyllStatusActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/txtSyllStatus"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="Syllabus Status"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/txtgraphview"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="Graph View"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/studentblue" />
+
+                <TextView
+                    android:id="@+id/txtStudName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Student Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/textSizesmall"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/yearblue" />
+
+                <TextView
+                    android:id="@+id/txtYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="year"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/textSizesmall"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/semesterblue" />
+
+                <TextView
+                    android:id="@+id/txtSem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Semester"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/textSizesmall"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/sectionblue" />
+
+                <TextView
+                    android:id="@+id/txtSection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="section"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/textSizesmall"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/lytAbs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/lightgrey"
+                android:orientation="horizontal"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:id="@+id/txtVw1"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Subject"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizesmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtVw2"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="SECTION"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizesmall"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtVw3"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Faculty"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizesmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtVw4"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Panel/Batch Name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizesmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtVw5"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Division"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizesmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtVw6"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="No of pruposed lectures"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizesmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Actual Lecture taken"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizesmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Total Topics/Practical"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizesmall"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Topics to be covered Upto (date)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizesmall"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txtVw7"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Topics covered"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizesmall"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Defeciency %"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizesmall"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Actual Syllabus covered %"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizesmall"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyVwSyllStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</HorizontalScrollView>
+
+
+</LinearLayout>

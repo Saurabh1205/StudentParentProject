@@ -1,0 +1,399 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="com.wordpro.studentproject.activities.LoginActivity"
+    android:orientation="vertical">
+
+    <!-- Login progress -->
+    <!--<ImageView
+        android:id="@+id/img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+-->
+
+<!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/edtInstituteCode"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_blue_button"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:hint="@string/prompt_instituteCode"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/txtSizeTwo" />
+
+
+            <EditText
+                android:id="@+id/edtLoginId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_blue_button"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:hint="@string/prompt_loginID"
+                android:inputType="textEmailAddress"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/txtSizeTwo" />
+
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_blue_button"
+                android:fontFamily="sans-serif-"
+                android:gravity="center"
+                android:hint="@string/prompt_password"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/txtSizeTwo" />
+
+            <EditText
+                android:id="@+id/edtMobile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_blue_button"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:hint="@string/prompt_mobile"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/txtSizeTwo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:inputType="textCapWords"
+                android:text="@string/msg_enter_securityPin"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edtPIN1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_blue_button"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:hint="@string/prompt_PIN1"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/txtSizeTwo" />
+
+            <EditText
+                android:id="@+id/edtPIN2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_blue_button"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:hint="@string/prompt_PIN2"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/txtSizeTwo" />
+
+
+            <Button
+                android:id="@+id/email_sign_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/round_white_button"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="2dp"
+                android:text="@string/action_Next"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>-->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="25dp"
+            android:layout_marginBottom="40dp">
+
+            <ImageView android:src="@drawable/new_logo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily=""
+                android:textColor="#3d3d3d"
+                android:text="Student Academic \n Schedule Handling Application" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="35sp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#3d3d3d"
+                android:text="Registration" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:text="Step"/>
+                <TextView
+                    android:id="@+id/txt_screen_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="#ff1a55"
+                    android:textStyle="normal"
+                    android:text=" 1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:text=" of 2"/>
+            </LinearLayout>
+
+
+            <!-- Email Label -->
+
+            <EditText
+                android:id="@+id/edtInstituteCode"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="7dp"
+                android:inputType="text"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:background="@drawable/btn_round_shap_login"
+                android:hint="Institute Code"/>
+            <!-- Password Label -->
+            <EditText
+                android:id="@+id/edtLoginId"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="35dp"
+                android:inputType="text"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/btn_round_shap_login"
+                android:hint="Login Id"/>
+
+            <EditText
+                android:id="@+id/edtMobile"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="35dp"
+                android:inputType="number"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/btn_round_shap_login"
+                android:hint="Mobile No"/>
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="35dp"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/btn_round_shap_login"
+                android:hint="Password"/>
+            <EditText
+                android:id="@+id/edtPIN1"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="35dp"
+                android:visibility="gone"
+                android:layout_marginTop="25dp"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/btn_round_shap_login"
+                android:hint="Enter 4 Digit Pin"/>
+
+            <EditText
+                android:id="@+id/edtPIN2"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="35dp"
+                android:visibility="gone"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/btn_round_shap_login"
+                android:hint="Re-Enter Pin"/>
+
+            <TextView
+                android:id="@+id/back_press"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:gravity="center|left"
+                android:paddingLeft="12dp"
+                android:paddingRight="22dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/icon_new_back"
+                android:textColor="#F1C40F"
+                android:textStyle="normal"
+                android:visibility="gone"
+                android:text="Back To Edit Login Details"/>
+
+            <Button
+                android:id="@+id/email_sign_in_button"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="24dp"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
+                android:background="@drawable/btn_round_shap_login_btn"
+                android:text="@string/btn_next"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/login_progress"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:indeterminateTint="@color/colorPrimary"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="gone" />
+</LinearLayout>

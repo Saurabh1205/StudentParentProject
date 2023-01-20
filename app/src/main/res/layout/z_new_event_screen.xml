@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Events"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textHeading" />
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            android:layout_marginLeft="21.3dp"
+            android:layout_marginRight="23.3dp"
+            android:layout_marginTop="5dp"
+            app:cardPreventCornerOverlap="false"
+            app:contentPadding="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="19.3dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/search_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="13.3sp"
+                        android:textColor="#6e6e6e"
+                        android:background="@drawable/btn_rectange_white"
+                        android:hint="Search News"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity ="center|right"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView_event_search"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/icon_serch"
+                            android:gravity="center|right"
+                            android:layout_gravity ="center"
+                            android:layout_marginRight="30.3dp" />
+
+
+                        <ImageView
+                            android:id="@+id/imageView_event_filter"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="10.3dp"
+                            android:gravity="center|right"
+                            android:src="@drawable/icon_new_filter" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:id="@+id/event_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eventMain_recyclerView">
+
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/back_press"
+                android:layout_gravity="center"
+                android:gravity="left|center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/i_back"/>
+            <TextView
+                android:id="@+id/txt_toolbarName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="left|center"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            android:layout_marginLeft="21.3dp"
+            android:layout_marginRight="23.3dp"
+            android:layout_marginTop="5dp"
+            app:cardPreventCornerOverlap="false"
+            app:contentPadding="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="19.3dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/search_news"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="13.3sp"
+                        android:textColor="#6e6e6e"
+                        android:background="@drawable/btn_rectange_white"
+                        android:hint="Search Event"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity ="right"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView_search"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/icon_serch"
+                            android:gravity="right"
+                            android:layout_gravity ="right"
+                            android:layout_marginRight="30.3dp" />
+
+
+                        <ImageView
+                            android:id="@+id/imageView_filter"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="10.3dp"
+                            android:gravity="right"
+                            android:src="@drawable/icon_new_filter" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="21.3dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="23.3dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="@color/colorPrimary"
+                app:tabIndicatorHeight="1dp"
+                android:background="#49b1f2"
+                app:tabSelectedTextColor="@color/black" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/frameLayout_news"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

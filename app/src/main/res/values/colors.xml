@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#012561</color>
+    <color name="colorPrimaryDark">#01c6d7</color>
+    <color name="colorAccent">#012561</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="lightgrey">#E5E5E5</color>
+    <color name="green">#009687</color>
+    <color name="blue">#49b1f2</color>
+    <color name="text_blue">#4fa4f2</color>
+    <color name="present">#4CAF50</color>
+    <color name="absent">#f44336</color>
+    <color name="cwork">#2196F3</color>
+    <color name="leave">#a49da7</color>
+    <color name="ClassAb">#9C27B0</color>
+    <color name="CWork">#2196F3</color>
+    <color name="CEvent">#FFC107</color>
+    <color name="Holiday">#9b5c04</color>
+    <color name="UnMarkAttend">#3F51B5</color>
+    <color name="FacultyLeave">#c2cf0c</color>
+    <color name="background">#ffffff</color>
+    <color name="tab_background_selected">#012561</color>
+    <color name="tab_background_unselected">#01c6d7</color>
+    <color name="reddish">#e21515</color>
+    <color name="deep_purple_lighten">#3f03ac</color>
+    <color name="baged_color">#fbaf5d</color>
+    <color name="selector_color">#f26c4f</color>
+    <color name="dd">#464646</color>
+    <color name="lunchBreak">#f9ad81</color>
+    <color name="gray_black">#6e6e6e</color>
+
+    <color name="primary_green">#52bf90</color>
+    <color name="primary_dark_green">#398564</color>
+    <color name="accent_green">#FF4081</color>
+    <color name="activity_bg">#e4e5e5</color>
+    <color name="primary_purple">#673AB7</color>
+    <color name="primary_dark_purple">#512DA8</color>
+    <color name="primary_light">#D1C4E9</color>
+    <color name="accent_purple">#FF9800</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="activity_bg_black">#374046</color>
+    <color name="sheduleDay">#00aeef</color>
+
+</resources>

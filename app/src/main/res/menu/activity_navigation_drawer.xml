@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/dashboard_new"
+        android:icon="@drawable/icon_dashbord"
+        android:visible="false"
+        android:title="Dashboard" />
+
+        <item
+            android:id="@+id/attendance_new"
+            android:icon="@drawable/iconattendance"
+            android:visible="false"
+            android:title="Attendance" />
+    <item
+        android:id="@+id/syllabus_new"
+        android:icon="@drawable/icon_syllabus"
+        android:visible="false"
+        android:title="Syllabus"/>
+
+    <item
+        android:id="@+id/schedule_new"
+        android:icon="@drawable/icon_shedul"
+        android:visible="false"
+        android:title="Schedule" />
+    <item
+        android:id="@+id/fees_new"
+        android:icon="@drawable/icon_fee"
+        android:visible="false"
+        android:title="Fees" />
+
+    <item
+        android:id="@+id/e_learning_new"
+        android:icon="@drawable/icon_e_lerning"
+        android:visible="false"
+        android:title="E-Learning" />
+        <item
+            android:id="@+id/d_wallet_new"
+            android:icon="@drawable/dwallet"
+            android:visible="false"
+            android:title="D - Wallet" />
+        <item
+            android:id="@+id/library_new"
+            android:icon="@drawable/library"
+            android:visible="false"
+            android:title="Library" />
+        <item
+            android:id="@+id/logout_new"
+            android:icon="@drawable/ic_power_settings_24dp"
+            android:visible="false"
+            android:title="Logout" />
+    <item
+        android:id="@+id/profile_new"
+        android:visible="false"
+        android:icon="@drawable/iconprofile"
+        android:title="Profile" />
+    </group>
+
+   <group android:checkableBehavior="single"
+       android:visible="false">
+        <item
+            android:id="@+id/attendance"
+            android:icon="@drawable/iconattendance"
+            android:title="Attendance" />
+        <item
+            android:id="@+id/syllabus"
+            android:icon="@drawable/iconsyllabus"
+            android:title="Syllabus" />
+
+        <item
+            android:id="@+id/schedule"
+            android:icon="@drawable/five_academic"
+            android:title="Schedule" />
+
+        <item
+            android:id="@+id/e_learning"
+            android:icon="@drawable/iconelearning"
+            android:title="E-Learning" />
+        <item
+            android:id="@+id/fees"
+            android:icon="@drawable/iconfees"
+            android:title="Fees" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/iconprofile"
+            android:title="Profile" />
+
+
+    </group>
+   <item android:title="Communicate"
+        android:visible="false">
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_info"
+                android:title="About" />
+            <item
+                android:id="@+id/policies"
+                android:icon="@drawable/policy"
+                android:title="Terms and Policies" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_power_settings_24dp"
+                android:title="Logout" />
+        </menu>
+   </item>
+
+</menu>

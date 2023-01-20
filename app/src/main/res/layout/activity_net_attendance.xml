@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgrey"
+    tools:context="com.wordpro.studentproject.activities.attendance_menu.NetAttendanceActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/lytOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtNet"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="@string/txtNetAttnd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtSizeTwo"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/studentblue" />
+
+            <TextView
+                android:id="@+id/txtStudName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="Student Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textSizesmall"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/yearblue" />
+
+            <TextView
+                android:id="@+id/txtSession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="2017 - 2018"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textSizesmall"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/semesterblue" />
+
+            <TextView
+                android:id="@+id/txtSemester"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="Semester"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textSizesmall"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/sectionblue" />
+
+            <TextView
+                android:id="@+id/txtSection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="Semester"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textSizesmall"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/calender" />
+
+            <TextView
+                android:id="@+id/txtFromDt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="dd-mm-yyyy"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textSizesmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="Upto"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textSizesmall"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/calender" />
+
+            <TextView
+                android:id="@+id/txtEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="dd-mm-yyyy"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textSizesmall"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtSubjectName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Subject"
+                android:layout_gravity="center"
+                android:gravity="center|start"
+                android:layout_marginRight="0.5dp"
+                android:paddingLeft="5dp"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:layout_weight="1"
+                android:textSize="@dimen/txtSizeOne"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+
+            <TextView
+                android:id="@+id/txtStudPrsntCount"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="Present"
+                android:textSize="@dimen/txtSizeOne"
+                android:layout_marginRight="0.5dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-smallcaps"/>
+            <TextView
+                android:id="@+id/txtTotLec"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="Total Period"
+                android:layout_gravity="center"
+                android:layout_marginRight="0.5dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/txtSizeOne"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-smallcaps"/>
+            <TextView
+                android:id="@+id/txtPercent"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="Percentage"
+                android:layout_gravity="center"
+                android:layout_marginRight="1dp"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="@dimen/txtSizeOne"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyVwNetAttndData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="0.5dp"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Theory"
+                android:layout_gravity="center"
+                android:gravity="center|right"
+                android:background="@color/white"
+                android:layout_marginRight="0.5dp"
+                android:textStyle="bold"
+                android:paddingRight="5dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/txtSizeOne"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+            <TextView
+                android:id="@+id/txtTH_PRESENT"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="Present"
+                android:textSize="@dimen/txtSizeOne"
+                android:layout_marginRight="0.5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+            <TextView
+                android:id="@+id/txtTH_TOTPRDAPPL"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="Total Period"
+                android:layout_gravity="center"
+                android:layout_marginRight="0.5dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/txtSizeOne"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-smallcaps"/>
+            <TextView
+                android:id="@+id/txtTH_PERCTG"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="Percentage"
+                android:layout_gravity="center"
+                android:layout_marginRight="0.5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/txtSizeOne"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="0.5dp"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Practical"
+                android:layout_gravity="center"
+                android:gravity="center|right"
+                android:background="@color/white"
+                android:layout_marginRight="0.5dp"
+                android:textStyle="bold"
+                android:paddingRight="5dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/txtSizeOne"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+            <TextView
+                android:id="@+id/txtPR_PRESENT"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="Present"
+                android:textSize="@dimen/txtSizeOne"
+                android:layout_marginRight="0.5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+            <TextView
+                android:id="@+id/txtPR_TOTPRDAPPL"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="Total Period"
+                android:layout_gravity="center"
+                android:layout_marginRight="0.5dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/txtSizeOne"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-smallcaps"/>
+            <TextView
+                android:id="@+id/txtPR_PERCTG"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="Percentage"
+                android:layout_gravity="center"
+                android:layout_marginRight="0.5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/txtSizeOne"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="0.5dp"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tutorial"
+                android:layout_gravity="center"
+                android:gravity="center|right"
+                android:background="@color/white"
+                android:layout_marginRight="0.5dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textSize="@dimen/txtSizeOne"
+                android:paddingRight="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+            <TextView
+                android:id="@+id/txtTU_PRESENT"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="Present"
+                android:textSize="@dimen/txtSizeOne"
+                android:layout_marginRight="0.5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+            <TextView
+                android:id="@+id/txtTU_TOTPRDAPPL"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="Total Period"
+                android:layout_gravity="center"
+                android:layout_marginRight="0.5dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/txtSizeOne"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-smallcaps"/>
+            <TextView
+                android:id="@+id/txtTU_PERCTG"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="Percentage"
+                android:layout_gravity="center"
+                android:layout_marginRight="0.5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/txtSizeOne"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="0.5dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Total"
+                android:layout_gravity="center"
+                android:gravity="center|right"
+                android:layout_marginRight="0.5dp"
+                android:background="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textSize="@dimen/txtSizeOne"
+                android:paddingRight="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+            <TextView
+                android:id="@+id/txtTotPrsnt"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="Present"
+                android:textSize="@dimen/txtSizeOne"
+                android:layout_marginRight="0.5dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+            <TextView
+                android:id="@+id/txtTotPeriod"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="Total Period"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginRight="0.5dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/txtSizeOne"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-smallcaps"/>
+            <TextView
+                android:id="@+id/txtTotPercent"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="Percentage"
+                android:background="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:layout_marginRight="0.5dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/txtSizeOne"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

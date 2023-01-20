@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lightgrey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/lightgrey">
+
+        <TextView
+            android:id="@+id/txtSrNo"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="0.5dp"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize"
+            android:text="1"
+            android:layout_gravity="center|left"/>
+
+
+        <TextView
+            android:id="@+id/txtslabDescrptn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="0.5dp"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize"
+            android:text="test 1"
+            android:layout_weight="1"
+            android:layout_gravity="center|left"/>
+
+        <TextView
+            android:id="@+id/txtslabtype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="0.5dp"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize"
+            android:text="test 1"
+            android:layout_weight="1"
+            android:layout_gravity="center|left"/>
+
+        <TextView
+            android:id="@+id/txtCalcuType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="0.5dp"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize"
+            android:text="test 1"
+            android:layout_weight="1"
+            android:layout_gravity="center|left"/>
+
+        <TextView
+            android:id="@+id/txtslabFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="0.5dp"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize"
+            android:text="test 1"
+            android:layout_weight="1"
+            android:layout_gravity="center|left"/>
+
+        <TextView
+            android:id="@+id/txtslabupto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="0.5dp"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize"
+            android:text="test 1"
+            android:layout_weight="1"
+            android:layout_gravity="center|left"/>
+
+        <TextView
+            android:id="@+id/txtslabCharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="0.5dp"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize"
+            android:text="test 1"
+            android:layout_weight="1"
+            android:layout_gravity="center|left"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

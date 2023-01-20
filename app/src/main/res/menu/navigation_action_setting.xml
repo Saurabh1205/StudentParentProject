@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_bell_icon"
+        android:icon="@drawable/icon_bell"
+        android:title=""
+        android:actionLayout="@layout/notification_layout_action"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_new"
+        android:title=""
+        android:icon="@drawable/icon_toolbar_action"
+        app:showAsAction="ifRoom"/>
+
+
+    <!--<item
+        android:id="@+id/action_event"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/action_event" />
+
+    <item
+        android:id="@+id/action_video"
+        android:icon="@drawable/ic_notify"
+        android:title="@string/action_video" />-->
+
+   <!-- <item
+        android:id="@+id/navigation_logout"
+        android:icon="@drawable/ic_power_settings_24dp"
+        android:title="@string/logout" />-->
+
+
+
+
+</menu>

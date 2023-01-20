@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgrey"
+    android:padding="0.5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/lightgrey"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtParticulars"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:background="@color/white"
+            android:textAllCaps="true"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Particulars"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txtSizeOne"
+            android:paddingRight="5dp"
+            android:paddingLeft="3dp"
+            android:layout_marginRight="0.5dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtReceivableAmt"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center|right"
+            android:background="@color/white"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Receivable Amt."
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txtSizeOne"
+            android:paddingRight="5dp"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtReceivedAmt"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center|right"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Received Amt."
+            android:textColor="@color/colorPrimary"
+            android:paddingRight="5dp"
+            android:textAllCaps="true"
+            android:layout_marginRight="0.5dp"
+            android:textSize="@dimen/txtSizeOne"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtAdjustment"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center|right"
+            android:paddingRight="5dp"
+            android:background="@color/white"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Adjustment"
+            android:layout_marginRight="0.5dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:textSize="@dimen/txtSizeOne"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtOutstanding"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center|right"
+            android:textAllCaps="true"
+            android:background="@color/white"
+            android:paddingRight="5dp"
+            android:layout_marginRight="0.5dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Outstanding"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txtSizeOne"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtAdvance"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center|right"
+            android:background="@color/white"
+            android:paddingRight="5dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Advance"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txtSizeOne"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

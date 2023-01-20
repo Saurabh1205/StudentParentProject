@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    tools:context=".activities.AttendanceActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:id="@+id/belowId"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:id="@+id/back_press"
+            android:layout_weight="0.5"
+            android:layout_gravity="left|center"
+            android:gravity="left"
+            android:layout_marginLeft="1dp"
+            android:src="@drawable/i_back"/>
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/txt_toolbarName"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="left|center"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+        <ImageView
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:id="@+id/setting_option"
+            android:layout_gravity="center"
+            android:gravity="right|center"
+            android:layout_marginLeft="1dp"
+            android:src="@drawable/icon_toolbar_action"/>
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_below="@+id/belowId"
+        android:id="@+id/frame_container_Action"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/belowId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorHeight="1dp"
+            android:background="@color/blue"
+            app:tabSelectedTextColor="@color/black" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/baged_color" />
+    </LinearLayout>
+</RelativeLayout>

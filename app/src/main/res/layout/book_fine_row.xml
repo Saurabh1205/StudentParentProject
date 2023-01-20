@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightgrey">
+
+        <TextView
+            android:id="@+id/txtBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="Let Us C"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:textSize="@dimen/textSize"
+            android:layout_margin="1dp"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/txtExpctRtrnDt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textSize="@dimen/textSize"
+            android:text="20 Apr 2019"
+            android:textAllCaps="true"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:layout_margin="1dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txtActualRtrnDt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:paddingLeft="5dp"
+            android:text="27 Apr 2019"
+            android:textSize="@dimen/textSize"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:layout_margin="1dp"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/txtFineDue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/textSize"
+            android:background="@color/white"
+            android:paddingLeft="5dp"
+            android:text="15.00"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:layout_margin="1dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txtFinePaid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:paddingLeft="5dp"
+            android:text="10.00"
+            android:textSize="@dimen/textSize"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:layout_margin="1dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txtFineOutstanding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/textSize"
+            android:background="@color/white"
+            android:paddingLeft="5dp"
+            android:text="5.00"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:layout_margin="1dp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
