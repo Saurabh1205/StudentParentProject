@@ -185,10 +185,10 @@ public class E_Lear_NotesFragment extends Fragment implements View.OnClickListen
         // act_submitted.setOnClickListener(this);
 
 
-       // NoteType();
+        // NoteType();
 
         //funNotesDtls();
-        funNotesDetails("E");
+        funNotesDetails(URLEndPoints.Constance_StudSemesterType);
         return view;
 
     }
@@ -202,8 +202,9 @@ public class E_Lear_NotesFragment extends Fragment implements View.OnClickListen
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.back_press:
-                Intent intent = new Intent(getActivity(), NavigationActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(getActivity(), NavigationActivity.class);
+//                startActivity(intent);
+//                onDestroy();
                 getActivity().finish();
                 break;
 
@@ -731,7 +732,7 @@ public class E_Lear_NotesFragment extends Fragment implements View.OnClickListen
                     downloadURLModel=gson.fromJson(response, DownloadURLModel.class);
                     if(downloadURLModel.getStatus()==1){
 
-                                progBarAssi.setVisibility(View.GONE);
+                        progBarAssi.setVisibility(View.GONE);
                         downloadURLArrayList=(ArrayList<DownloadURLModel.DataBean>)downloadURLModel.getData();
                         if(downloadURLArrayList.size()!=0 && downloadURLArrayList!=null){
 

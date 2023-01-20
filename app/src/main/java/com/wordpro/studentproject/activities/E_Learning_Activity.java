@@ -36,7 +36,7 @@ public class E_Learning_Activity extends AppCompatActivity implements View.OnCli
     private ImageView  back_press,setting_option;
     private LinearLayout belowId;
     private PopupWindow mpopup;
-    private CardView  card_view2;
+    private CardView card_view2;
     private  LinearLayout lay_assignment,lay_Notes;
     private TextView   txt_assignment,txt_Notes;
     @Override
@@ -55,15 +55,10 @@ public class E_Learning_Activity extends AppCompatActivity implements View.OnCli
        /* act_pub_assi.setOnClickListener(this);
         act_sub_assi.setOnClickListener(this);
 */
-        if (URLEndPoints.ConstanceLoginUser.equalsIgnoreCase("Student")){
-            belowId.setBackgroundColor(ContextCompat.getColor(this, R.color.text_blue));
-        }else {
-            belowId.setBackgroundColor(ContextCompat.getColor(this, R.color.present));
-        }
 
         try {
             belowId.setVisibility(View.VISIBLE);
-            txt_toolbarName.setText("Assignment - (Published Assignments)");
+            txt_toolbarName.setText("Assignment - (Published)");
             fragment = new E_Lear_AssignmentFragment();
             Bundle bundle=new Bundle();
             //  txt_toolbarName.setText("Assignment - (Published Assignments)");
@@ -74,8 +69,8 @@ public class E_Learning_Activity extends AppCompatActivity implements View.OnCli
             e.printStackTrace();
         }
 
-       // act_pub_assi.setTextColor(ContextCompat.getColor(this, R.color.white));
-      //  act_pub_assi.setBackground(ContextCompat.getDrawable(this,R.color.selector_color));
+        // act_pub_assi.setTextColor(ContextCompat.getColor(this, R.color.white));
+        //  act_pub_assi.setBackground(ContextCompat.getDrawable(this,R.color.selector_color));
 
 
         setting_option.setOnClickListener(new View.OnClickListener() {
@@ -104,7 +99,7 @@ public class E_Learning_Activity extends AppCompatActivity implements View.OnCli
 
                         fragment = new E_Lear_AssignmentFragment();
                         Bundle bundle=new Bundle();
-                        txt_toolbarName.setText("Assignment - (Published Assignments)");
+                        txt_toolbarName.setText("Assignment - (Published)");
                         bundle.putString("assignment", "Assignment");
                         fragment.setArguments(bundle);
                         loadFragment(fragment);
@@ -140,6 +135,7 @@ public class E_Learning_Activity extends AppCompatActivity implements View.OnCli
                 Intent intent = new Intent(this, NavigationActivity.class);
                 startActivity(intent);
                 finish();
+                //onBackPressed();
                 break;
 
         }
