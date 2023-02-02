@@ -57,7 +57,9 @@ public class WebConfig {
                 //BASE_URL = "http://103.208.73.138:82/api/";
                 //BASE_URL = "http://103.208.73.138:82/api/";
                  URLEndPoints.Constance_InstituteCode ="JDIET";
-                 BASE_URL ="http://103.225.174.30:82/api/";
+                // BASE_URL ="http://103.225.174.30:82/api/";
+                 BASE_URL ="http://103.181.16.210:82/api/"; //02/02/2023
+
                 code = BASE_URL;
                 break;
             default:

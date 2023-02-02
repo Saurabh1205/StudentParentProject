@@ -862,7 +862,7 @@ public class E_Lear_NotesFragment extends Fragment implements View.OnClickListen
 
         utilityClassObj.startLoader(getActivity(),R.drawable.image_for_rotation);
         String url = pref.getURL() + URLEndPoints.SubDataInsert_URL;
-        Log.d(TAG, "URL : " + url);
+        Log.e(TAG, "URL : " + url);
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -870,7 +870,7 @@ public class E_Lear_NotesFragment extends Fragment implements View.OnClickListen
 
                 try {
 
-                    Log.d(TAG, "response : " + response);
+                    Log.e(TAG, "response : " + response);
 
                     utilityClassObj.stopLoader();
                 } catch (Exception e) {
