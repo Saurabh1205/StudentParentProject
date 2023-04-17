@@ -181,7 +181,7 @@ public class UniversitySyllabusFragmen extends Fragment {
 
             //String url = pref.getURL() + URLEndPoints.GetUniversitySyllabusList_URL(URLEndPoints.Constance_StudSessionId,URLEndPoints.Constance_StudSemesterType, URLEndPoints.Constance_StudBranchStandardId, URLEndPoints.Constance_StudentCenterCode);
             //String url = pref.getURL() + URLEndPoints.GetUniversitySyllabusList_URL(URLEndPoints.Constance_StudSessionId, URLEndPoints.Constance_studBranch_Standard_GRP_ID, URLEndPoints.Constance_StudSemesterType);
-            String url = pref.getURL() + URLEndPoints.NewGetUniversitySyllabusList_URL(URLEndPoints.Constance_StudBranchStandardId,URLEndPoints.Constance_StudentCenterCode,URLEndPoints.Constance_StudSessionId,URLEndPoints.Constance_StudentID, "O");
+            String url = pref.getURL() + URLEndPoints.NewGetUniversitySyllabusList_URL(URLEndPoints.Constance_StudBranchStandardId,URLEndPoints.Constance_StudentCenterCode,URLEndPoints.Constance_StudSessionId,URLEndPoints.Constance_StudentID, URLEndPoints.Constance_StudSemesterType);
 
             Log.d(TAG, "Subject and faculty List : " + url);
 

@@ -6,6 +6,7 @@ import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,28 +55,28 @@ public class SubjectWiseAttendanceAdpter extends RecyclerView.Adapter<SubjectWis
 
     @SuppressLint("ResourceAsColor")
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int postion) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int postion) {
 
         String userName = subjectWiseData.get(postion).getPROF_EMP_FN_MN_SHORT().toLowerCase();
         String subDes = subjectWiseData.get(postion).getSUBJECT_DESCRIPTION().toLowerCase();
-
+        Log.e("data","iss==="+subDes);
         String[] strArray = userName.split("[  .]");
         StringBuilder builder = new StringBuilder();
         for (String s : strArray) {
             String cap = s.substring(0, 1).toUpperCase() + s.substring(1);
             builder.append(cap + " ");
         }
-        String[] strArray1 = subDes.split(" ");
-        StringBuilder builder1 = new StringBuilder();
-        for (String s : strArray1) {
-            String cap = s.substring(0, 1).toUpperCase() + s.substring(1);
-            builder1.append(cap + " ");
-        }
+//        String[] strArray1 = subDes.split(" ");
+//        StringBuilder builder1 = new StringBuilder();
+//        for (String s : strArray1) {
+//            String cap = s.substring(0, 1).toUpperCase() + s.substring(1);
+//            builder1.append(cap + " ");
+//        }
 
 
         holder.userName.setText(builder);
         // holder.userName.setText(WordUtils.capitalize(userName));
-        holder.txt_name.setText(builder1);
+        holder.txt_name.setText(subDes);
        String th = subjectWiseData.get(postion).getTYPE_DESCRIPTION();
        //String Re =subjectWiseData.get(postion).getPERIOD_TYPE();
 

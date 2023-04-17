@@ -33,6 +33,7 @@ import com.android.volley.TimeoutError;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
 import com.wordpro.studentproject.R;
 import com.wordpro.studentproject.activities.NavigationActivity;
 import com.wordpro.studentproject.adapter.FeesTopHeaderNameAdapterClass;
@@ -56,6 +57,7 @@ import com.wordpro.studentproject.model.TeachPlanSubjModel;
 import com.wordpro.studentproject.utils.UtilityClass;
 import com.wordpro.studentproject.webConfig.URLEndPoints;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.text.NumberFormat;
@@ -127,7 +129,7 @@ public class New_Dashbord_Fragment extends Fragment  {
         card_view_net = (CardView) view. findViewById(R.id.card_view_net);
 
         txt_sub_name = (TextView) view.findViewById(R.id.txt_sub_name);
-        txt_Tm = (TextView) view.findViewById(R.id.txt_Tm);
+        //txt_Tm = (TextView) view.findViewById(R.id.txt_Tm);
         txt_tolPre = (TextView) view.findViewById(R.id.txt_tolPre);
         txt_tolPer = (TextView) view.findViewById(R.id.txt_tolPer);
         txt_total_pre = (TextView) view.findViewById(R.id.txt_total_pre);
@@ -239,6 +241,12 @@ public class New_Dashbord_Fragment extends Fragment  {
 
                         }
 
+
+
+
+
+
+
                     } else if (status == 0) {
                        /* Snackbar.make(lytAttndence, "Server not responding.Please try later.", Snackbar.LENGTH_LONG)
                                 .setAction("Action", null).show();*/
@@ -277,12 +285,12 @@ public class New_Dashbord_Fragment extends Fragment  {
     private void getNetAttendanceData(final String period_start_date, final String period_end_date) {
 
         String url = pref.getURL() + URLEndPoints.GetNetSelfAttendance_URL;
-        Log.d(TAG, "NetSelfAttendance : " + url);
+        Log.e(TAG, "NetSelfAttendance : " + url);
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Log.d(TAG, response.toString());
+                Log.d(TAG, "Response is +="+response.toString());
                 Gson gson = new Gson();
 
                 netAttendanceModel = gson.fromJson(response, NetAttendanceModel.class);
@@ -290,7 +298,7 @@ public class New_Dashbord_Fragment extends Fragment  {
 
                     netAttndArrayList = (ArrayList<NetAttendanceModel.DataBean>) netAttendanceModel.getData();
                     if (netAttndArrayList != null && netAttndArrayList.size() != 0) {
-                        String totalcount;
+                        //String totalcount;
                        /* netWiseAttendanceAdpter = new NetWiseAttendanceAdpter(getActivity(),netAttndArrayList);
                         spanWiseList.setLayoutManager(new LinearLayoutManager(getActivity()));
                         spanWiseList.setAdapter(netWiseAttendanceAdpter);*/
@@ -315,8 +323,8 @@ public class New_Dashbord_Fragment extends Fragment  {
 
                         Double PeriodsPRE;
                         Double Periods;
-                        int PeriodsPREINT;
-                        int PeriodsINT;
+                        int PeriodsPREINT=0;
+                        int PeriodsINT=0;
                         try {
                             // PeriodsPRE = Double.valueOf(TotalPERIODS_PRSNT*100/totalSum);
                             // Periods = Double.valueOf(TOTAL_NOOF_PERIODS*100/totalSum);
@@ -330,9 +338,9 @@ public class New_Dashbord_Fragment extends Fragment  {
                         }catch (Exception e){
                             e.printStackTrace();
                         }
-
-                        Double Sum= Double.valueOf(TotalADD*100/totalSum);
-
+                        Log.e("TotalADD","Total=="+TotalADD);
+                        Double Sum= Double.valueOf(PeriodsPREINT*100/PeriodsINT);
+                        Log.e("TotalADD","Total=="+Sum);
                         int TotalPrevalue = (int)Math.round(Sum);
 
                         String s=String.valueOf(TotalPrevalue);
@@ -388,6 +396,7 @@ public class New_Dashbord_Fragment extends Fragment  {
                 params.put("P_Attend_Per_Upto", "100");
 
                 Log.e(TAG, "Posting params: " + params.toString());
+                Log.e(TAG, "Posting params value in Json: " + new JSONObject(params));
 
                 return params;
             }
@@ -495,7 +504,7 @@ public class New_Dashbord_Fragment extends Fragment  {
                 params.put("_centercode", URLEndPoints.Constance_StudentCenterCode);
                 params.put("PI_SESSION_ID", URLEndPoints.Constance_StudSessionId);
 
-                Log.e(TAG, "Posting params: " + params.toString());
+                Log.e(TAG, "Posting params: " +new JSONObject(params));
 
                 return params;
             }

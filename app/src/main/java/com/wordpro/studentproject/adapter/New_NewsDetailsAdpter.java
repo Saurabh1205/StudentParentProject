@@ -1,5 +1,6 @@
 package com.wordpro.studentproject.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -56,7 +57,7 @@ public class New_NewsDetailsAdpter extends RecyclerView.Adapter<New_NewsDetailsA
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int postion) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int postion) {
 
         holder.txt_header_Name.setText(noticPattenParents.get(postion).getnOTICEHEADER());
         holder.txt_header_date.setText(noticPattenParents.get(postion).getChild().get(0).getnOTICESTARTDATE());
