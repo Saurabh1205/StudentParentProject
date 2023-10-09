@@ -84,7 +84,7 @@ public class New_Reservation_Fragment extends Fragment {
         utilityClassObj.startLoader(getActivity(),R.drawable.image_for_rotation);
         String s_id,s_st,s_sid,s_t;
         s_id =URLEndPoints.Constance_StudentID;
-        s_st ="O";
+        s_st =URLEndPoints.Constance_StudSemesterType;
         s_sid ="20";
         s_t ="";
         String url= BASE_URL+ URLEndPoints.GetLibBokReserStatus_URL(s_id, s_sid, s_st);
