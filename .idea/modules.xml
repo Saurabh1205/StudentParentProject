@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/StudentProject.iml" filepath="$PROJECT_DIR$/StudentProject.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/StudentProject.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/StudentProject.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/StudentProject.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/StudentProject.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/StudentProject.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/StudentProject.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/StudentProject.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/StudentProject.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/StudentParentVCSProject.iml" filepath="$PROJECT_DIR$/.idea/modules/StudentParentVCSProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/StudentParentVCSProject.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/StudentParentVCSProject.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/StudentParentVCSProject.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/StudentParentVCSProject.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/StudentParentVCSProject.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/StudentParentVCSProject.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/StudentParentVCSProject.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/StudentParentVCSProject.app.unitTest.iml" />
     </modules>
   </component>
 </project>

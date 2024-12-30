@@ -25,14 +25,12 @@ import com.bumptech.glide.request.RequestOptions;
 import com.pierfrancescosoffritti.youtubeplayer.player.AbstractYouTubePlayerListener;
 import com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayerView;
 import com.wordpro.studentproject.R;
+import com.wordpro.studentproject.databinding.ItemYoutubeListVerticalBinding;
 import com.wordpro.studentproject.helper.BaseViewHolder;
 import com.wordpro.studentproject.model.YoutubeVideo;
 
 import java.util.List;
 import java.util.regex.Pattern;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class YoutubeListRecyclerAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
@@ -65,7 +63,11 @@ public class YoutubeListRecyclerAdapter extends RecyclerView.Adapter<BaseViewHol
     @NonNull
     @Override
     public BaseViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new YoutubeListRecyclerAdapter.ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_youtube_list_vertical, parent, false));
+        ItemYoutubeListVerticalBinding binding = ItemYoutubeListVerticalBinding.inflate(
+                LayoutInflater.from(parent.getContext()), parent, false);
+
+        // Pass the binding to the ViewHolder
+        return new ViewHolder(binding);
     }
 
     @Override
@@ -95,32 +97,31 @@ public class YoutubeListRecyclerAdapter extends RecyclerView.Adapter<BaseViewHol
 
 
     public class ViewHolder extends BaseViewHolder {
+        private final ItemYoutubeListVerticalBinding binding;
+//        @BindView(R.id.textViewTitle)
+//        TextView textWaveTitle;
+//        @BindView(R.id.btnPlay)
+//        ImageView playButton;
+//        @BindView(R.id.imageViewItem)
+//        ImageView imageViewItems;
+//        @BindView(R.id.youtube_view)
+//        YouTubePlayerView youTubePlayerView;
+//        @BindView(R.id.relativeLytYoutubeVideo)
+//        RelativeLayout relativeLytYoutubeVideo;
+//        @BindView(R.id.relativeLytSimpleVideo)
+//        RelativeLayout relativeLytSimpleVideo;
+//        @BindView(R.id.relativeLytSimpleText)
+//        RelativeLayout relativeLytSimpleText;
+//        @BindView(R.id.imgView)
+//        ImageView imgView;
+//        @BindView(R.id.videoView)
+//        VideoView videoView;
 
-        @BindView(R.id.textViewTitle)
-        TextView textWaveTitle;
-        @BindView(R.id.btnPlay)
-        ImageView playButton;
-        @BindView(R.id.imageViewItem)
-        ImageView imageViewItems;
-        @BindView(R.id.youtube_view)
-        YouTubePlayerView youTubePlayerView;
-        @BindView(R.id.relativeLytYoutubeVideo)
-        RelativeLayout relativeLytYoutubeVideo;
-        @BindView(R.id.relativeLytSimpleVideo)
-        RelativeLayout relativeLytSimpleVideo;
-        @BindView(R.id.relativeLytSimpleText)
-        RelativeLayout relativeLytSimpleText;
-        @BindView(R.id.imgView)
-        ImageView imgView;
-        @BindView(R.id.videoView)
-        VideoView videoView;
-
-        public ViewHolder(final View itemView) {
-            super(itemView);
-            ButterKnife.bind(this, itemView);
-
+        public ViewHolder(ItemYoutubeListVerticalBinding binding) {
+            super(binding.getRoot());
+            this.binding = binding;
             Typeface customTypeOne = Typeface.createFromAsset(itemView.getContext().getAssets(), "font/Poppins-Medium.otf");
-            textWaveTitle.setTypeface(customTypeOne);
+            binding.textViewTitle.setTypeface(customTypeOne);
 
             // Setup the click listener
             itemView.setOnClickListener(new View.OnClickListener() {
@@ -150,41 +151,41 @@ public class YoutubeListRecyclerAdapter extends RecyclerView.Adapter<BaseViewHol
             String videoId = mYoutubeVideo.getVideoId();
 
             if (videoId.equalsIgnoreCase("SimpleVideo")) {
-                relativeLytYoutubeVideo.setVisibility(View.GONE);
-                imageViewItems.setVisibility(View.GONE);
-                playButton.setVisibility(View.GONE);
-                youTubePlayerView.setVisibility(View.GONE);
+                binding.relativeLytYoutubeVideo.setVisibility(View.GONE);
+                binding.imageViewItem.setVisibility(View.GONE);
+                binding.btnPlay.setVisibility(View.GONE);
+                binding.youtubeView.setVisibility(View.GONE);
                 //textViewYoutube.setVisibility(View.GONE);
-                relativeLytSimpleText.setVisibility(View.GONE);
-                imgView.setVisibility(View.GONE);
+                binding.relativeLytSimpleText.setVisibility(View.GONE);
+                binding.imgView.setVisibility(View.GONE);
                 //textHeading.setVisibility(View.GONE);
                 //textContent.setVisibility(View.GONE);
-                relativeLytSimpleVideo.setVisibility(View.VISIBLE);
-                videoView.setVisibility(View.VISIBLE);
+                binding.relativeLytSimpleVideo.setVisibility(View.VISIBLE);
+                binding.videoView.setVisibility(View.VISIBLE);
                 //textViewSimpleVideo.setVisibility(View.VISIBLE);
 
 
                 String title = mYoutubeVideo.getTitle();
                 title = title.replace("$", " : ");
 
-                textWaveTitle.setText(title);
+                binding.textViewTitle.setText(title);
 
                 final MediaController mediacontroller = new MediaController(context);
-                mediacontroller.setAnchorView(videoView);
-                videoView.setMediaController(mediacontroller);
-                videoView.setVideoURI(Uri.parse(mYoutubeVideo.getImageUrl()));
-                videoView.requestFocus();
-                videoView.start();
+                mediacontroller.setAnchorView(binding.videoView);
+                binding.videoView.setMediaController(mediacontroller);
+                binding.videoView.setVideoURI(Uri.parse(mYoutubeVideo.getImageUrl()));
+                binding.videoView.requestFocus();
+                binding.videoView.start();
 
 
-                videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                binding.videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
                     @Override
                     public void onPrepared(MediaPlayer mp) {
                         mp.setOnVideoSizeChangedListener(new MediaPlayer.OnVideoSizeChangedListener() {
                             @Override
                             public void onVideoSizeChanged(MediaPlayer mp, int width, int height) {
-                                videoView.setMediaController(mediacontroller);
-                                mediacontroller.setAnchorView(videoView);
+                                binding.videoView.setMediaController(mediacontroller);
+                                mediacontroller.setAnchorView(binding.videoView);
 
                                 new Handler().postDelayed(new Runnable() {
 
@@ -193,7 +194,7 @@ public class YoutubeListRecyclerAdapter extends RecyclerView.Adapter<BaseViewHol
                                     @Override
                                     public void run() {
 
-                                        videoView.stopPlayback();
+                                        binding.videoView.stopPlayback();
 
                                     }
                                 }, 15 * 1000); // wait for 5 seconds
@@ -219,7 +220,7 @@ public class YoutubeListRecyclerAdapter extends RecyclerView.Adapter<BaseViewHol
                 }
             });
 */
-                videoView.setOnErrorListener(new MediaPlayer.OnErrorListener() {
+                binding.videoView.setOnErrorListener(new MediaPlayer.OnErrorListener() {
                     @Override
                     public boolean onError(MediaPlayer mp, int what, int extra) {
                         Log.d("API123", "What " + what + " extra " + extra);
@@ -230,17 +231,17 @@ public class YoutubeListRecyclerAdapter extends RecyclerView.Adapter<BaseViewHol
 
             } else if (videoId.equalsIgnoreCase("SimpleEvent")) {
 
-                relativeLytYoutubeVideo.setVisibility(View.GONE);
-                imageViewItems.setVisibility(View.GONE);
-                playButton.setVisibility(View.GONE);
-                youTubePlayerView.setVisibility(View.GONE);
+                binding.relativeLytYoutubeVideo.setVisibility(View.GONE);
+                binding.imageViewItem.setVisibility(View.GONE);
+                binding.btnPlay.setVisibility(View.GONE);
+                binding.youtubeView.setVisibility(View.GONE);
                 //textViewYoutube.setVisibility(View.GONE);
-                relativeLytSimpleVideo.setVisibility(View.GONE);
-                videoView.setVisibility(View.GONE);
+                binding.relativeLytSimpleVideo.setVisibility(View.GONE);
+                binding.videoView.setVisibility(View.GONE);
                 //textViewSimpleVideo.setVisibility(View.GONE);
 
-                relativeLytSimpleText.setVisibility(View.VISIBLE);
-                imgView.setVisibility(View.VISIBLE);
+                binding.relativeLytSimpleText.setVisibility(View.VISIBLE);
+                binding.imgView.setVisibility(View.VISIBLE);
                 //textHeading.setVisibility(View.VISIBLE);
                 //textContent.setVisibility(View.VISIBLE);
 
@@ -252,59 +253,59 @@ public class YoutubeListRecyclerAdapter extends RecyclerView.Adapter<BaseViewHol
                             // .load("https://images.unsplash.com/photo-1520882948759-529963a84160?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60").
                             .load(url)
                             .apply(new RequestOptions().override(width - 36, 200))
-                            .into(imgView);
+                            .into(binding.imgView);
                 }
 
                 String v = mYoutubeVideo.getTitle();
                 String[] val = v.split(Pattern.quote("$"));
 
 
-                textWaveTitle.setText(val[0]);
+                binding.textViewTitle.setText(val[0]);
 
                 String title = mYoutubeVideo.getTitle();
                 if (title != null)
-                    textWaveTitle.setText(val[1]);
-                textWaveTitle.setMovementMethod(new ScrollingMovementMethod());
+                    binding.textViewTitle.setText(val[1]);
+                binding.textViewTitle.setMovementMethod(new ScrollingMovementMethod());
 
 
             } else {
 
                 if (mYoutubeVideo.getVideoId().contains("https") || mYoutubeVideo.getVideoId().contains("http")) {
 
-                    relativeLytYoutubeVideo.setVisibility(View.GONE);
-                    imageViewItems.setVisibility(View.GONE);
-                    playButton.setVisibility(View.GONE);
-                    youTubePlayerView.setVisibility(View.GONE);
+                    binding.relativeLytYoutubeVideo.setVisibility(View.GONE);
+                    binding.imageViewItem.setVisibility(View.GONE);
+                    binding.btnPlay.setVisibility(View.GONE);
+                    binding.youtubeView.setVisibility(View.GONE);
                     //textViewYoutube.setVisibility(View.GONE);
-                    relativeLytSimpleText.setVisibility(View.GONE);
-                    imgView.setVisibility(View.GONE);
+                    binding.relativeLytSimpleText.setVisibility(View.GONE);
+                    binding.imgView.setVisibility(View.GONE);
                     //textHeading.setVisibility(View.GONE);
                     //textContent.setVisibility(View.GONE);
-                    relativeLytSimpleVideo.setVisibility(View.VISIBLE);
-                    videoView.setVisibility(View.VISIBLE);
+                    binding.relativeLytSimpleVideo.setVisibility(View.VISIBLE);
+                    binding.videoView.setVisibility(View.VISIBLE);
                     //textViewSimpleVideo.setVisibility(View.VISIBLE);
 
                     String title = mYoutubeVideo.getTitle();
                     title = title.replace("$", " : ");
-                    textWaveTitle.setText(title);
+                    binding.textViewTitle.setText(title);
 
 
                     final MediaController mediacontroller = new MediaController(context);
-                    mediacontroller.setAnchorView(videoView);
-                    videoView.setMediaController(mediacontroller);
-                    videoView.setVideoURI(Uri.parse(mYoutubeVideo.getImageUrl()));
-                    videoView.requestFocus();
-                    videoView.start();
+                    mediacontroller.setAnchorView(binding.videoView);
+                    binding.videoView.setMediaController(mediacontroller);
+                    binding.videoView.setVideoURI(Uri.parse(mYoutubeVideo.getImageUrl()));
+                    binding.videoView.requestFocus();
+                    binding.videoView.start();
 
 
-                    videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                    binding.videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
                         @Override
                         public void onPrepared(MediaPlayer mp) {
                             mp.setOnVideoSizeChangedListener(new MediaPlayer.OnVideoSizeChangedListener() {
                                 @Override
                                 public void onVideoSizeChanged(MediaPlayer mp, int width, int height) {
-                                    videoView.setMediaController(mediacontroller);
-                                    mediacontroller.setAnchorView(videoView);
+                                    binding.videoView.setMediaController(mediacontroller);
+                                    mediacontroller.setAnchorView(binding.videoView);
                                     new Handler().postDelayed(new Runnable() {
 
                                         // Using handler with postDelayed called runnable run method
@@ -312,7 +313,7 @@ public class YoutubeListRecyclerAdapter extends RecyclerView.Adapter<BaseViewHol
                                         @Override
                                         public void run() {
 
-                                            videoView.stopPlayback();
+                                            binding.videoView.stopPlayback();
 
                                         }
                                     }, 15 * 1000); // wait for 5 seconds
@@ -327,7 +328,7 @@ public class YoutubeListRecyclerAdapter extends RecyclerView.Adapter<BaseViewHol
                     });
 
 
-                    videoView.setOnErrorListener(new MediaPlayer.OnErrorListener() {
+                    binding.videoView.setOnErrorListener(new MediaPlayer.OnErrorListener() {
                         @Override
                         public boolean onError(MediaPlayer mp, int what, int extra) {
                             Log.d("API123", "What " + what + " extra " + extra);
@@ -339,18 +340,18 @@ public class YoutubeListRecyclerAdapter extends RecyclerView.Adapter<BaseViewHol
                 } else {
 
 
-                    relativeLytSimpleVideo.setVisibility(View.GONE);
-                    playButton.setVisibility(View.GONE);
-                    videoView.setVisibility(View.GONE);
+                    binding.relativeLytSimpleVideo.setVisibility(View.GONE);
+                    binding.btnPlay.setVisibility(View.GONE);
+                    binding.videoView.setVisibility(View.GONE);
                     //textViewSimpleVideo.setVisibility(View.GONE);
-                    relativeLytSimpleText.setVisibility(View.GONE);
-                    imgView.setVisibility(View.GONE);
+                    binding.relativeLytSimpleText.setVisibility(View.GONE);
+                    binding.imgView.setVisibility(View.GONE);
                     //textHeading.setVisibility(View.GONE);
                     //textContent.setVisibility(View.GONE);
 
-                    relativeLytYoutubeVideo.setVisibility(View.VISIBLE);
-                    imageViewItems.setVisibility(View.VISIBLE);
-                    youTubePlayerView.setVisibility(View.VISIBLE);
+                    binding.relativeLytYoutubeVideo.setVisibility(View.VISIBLE);
+                    binding.imageViewItem.setVisibility(View.VISIBLE);
+                    binding.youtubeView.setVisibility(View.VISIBLE);
                     //textViewYoutube.setVisibility(View.VISIBLE);
 
                     ((Activity) context).getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
@@ -360,7 +361,7 @@ public class YoutubeListRecyclerAdapter extends RecyclerView.Adapter<BaseViewHol
                     title = title.replace("$", " : ");
                     if (title != null)
 
-                        textWaveTitle.setText(title);
+                        binding.textViewTitle.setText(title);
 
                     String url = mYoutubeVideo.getImageUrl();
 
@@ -368,20 +369,20 @@ public class YoutubeListRecyclerAdapter extends RecyclerView.Adapter<BaseViewHol
                         Glide.with(context)
                                 .load(url).
                                 apply(new RequestOptions().override(width - 36, 200))
-                                .into(imageViewItems);
+                                .into(binding.imageViewItem);
                     }
-                    imageViewItems.setVisibility(View.VISIBLE);
-                    playButton.setVisibility(View.VISIBLE);
-                    youTubePlayerView.setVisibility(View.GONE);
+                    binding.imageViewItem.setVisibility(View.VISIBLE);
+                    binding.btnPlay.setVisibility(View.VISIBLE);
+                    binding.youtubeView.setVisibility(View.GONE);
 
-                    playButton.setOnClickListener(new View.OnClickListener() {
+                    binding.btnPlay.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            imageViewItems.setVisibility(View.GONE);
-                            youTubePlayerView.setVisibility(View.VISIBLE);
-                            playButton.setVisibility(View.VISIBLE);
+                            binding.imageViewItem.setVisibility(View.GONE);
+                            binding.youtubeView.setVisibility(View.VISIBLE);
+                            binding.btnPlay.setVisibility(View.VISIBLE);
 
-                            youTubePlayerView.initialize(initializedYouTubePlayer -> initializedYouTubePlayer.addListener(new AbstractYouTubePlayerListener() {
+                            binding.youtubeView.initialize(initializedYouTubePlayer -> initializedYouTubePlayer.addListener(new AbstractYouTubePlayerListener() {
                                 @Override
                                 public void onReady() {
                                     initializedYouTubePlayer.loadVideo(mYoutubeVideo.getVideoId(), 0);

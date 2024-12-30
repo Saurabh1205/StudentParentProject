@@ -400,10 +400,7 @@
                             android:layout_alignParentStart="true"
                             android:gravity="bottom"
                             android:padding="10dip"
-                            app:centered="true"
-                            app:fillColor="#1a245b"
-                            app:pageColor="#15dfdc"
-                            app:snap="false" />
+                            />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -456,10 +453,7 @@
                             android:layout_alignParentStart="true"
                             android:gravity="bottom"
                             android:padding="10dip"
-                            app:centered="true"
-                            app:fillColor="#1a245b"
-                            app:pageColor="#533535"
-                            app:snap="false" />
+                             />
 
                         <TextView
                             android:layout_width="match_parent"
